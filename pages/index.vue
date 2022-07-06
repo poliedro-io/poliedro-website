@@ -5,14 +5,14 @@
       <BaseSection>
         <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
           <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
-            >Sign Up Today</span
+            >Digitalízate</span
           >
           <h1
             data-aos="fade-right"
             data-aos-once="true"
             class="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
           >
-            The World's <span class="text-header-gradient">Fastest Growing</span> Crypto Web App
+            The World's <span class="text-header-gradient">Poliedro</span> Poliedro
           </h1>
           <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph hidden sm:block">
             Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.
@@ -24,15 +24,9 @@
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
           >
             <BaseButton
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
-            >
-              Get Started
-            </BaseButton>
-            <BaseButton
               class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
             >
-              <span>Download App</span>
-              <ChevronDownIcon :size="20" class="mt-1 text-[#0c66ee]" />
+              <span>Contactar </span>
             </BaseButton>
           </div>
         </div>
@@ -47,214 +41,21 @@
             />
           </div>
         </div>
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-1.png')"
-          class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-2.png')"
-          class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-3.png')"
-          class="hidden sm:block absolute bottom-56 right-24 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/star.png')"
-          class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
-        />
       </BaseSection>
     </section>
 
-    <!-- Crypto statistic section -->
-    <section
-      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
-    >
-      <div class="w-full flex flex-col lg:flex-row items-center justify-center">
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          title="🔥 Trending"
-          :datasets="trendings"
-          class="xl:border-r border-gray-200 lg:px-8"
-        />
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          data-aos-delay="150"
-          title="🚀 Top Gainers"
-          :datasets="topGainers"
-          class="xl:border-r border-gray-200 lg:px-8"
-        />
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          data-aos-delay="300"
-          title="💎 Recently Added"
-          :datasets="recents"
-          class="lg:px-8"
-        />
-      </div>
-    </section>
 
-    <!-- Buy and trade section -->
-    <section class="w-full my-24">
-      <BaseSection>
-        <LandingBuyTradeImage class="sm:hidden mb-8" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-4xl font-semibold sm:pr-8 xl:pr-12">
-            Buy & trade on the <br class="hidden sm:block" />
-            original crypto exchange.
-          </h2>
-          <p class="paragraph">
-            Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. We accept BTC crypto-currency
-          </p>
-          <div class="space-y-6 lg:pr-12">
-            <LandingExchange
-              name="Amount"
-              value="5.000"
-              :exchange-selected="currencySelected"
-              :exchanges="currencies"
-            />
-            <LandingExchange
-              name="Get"
-              value="0.10901"
-              :exchange-selected="cryptoSelected"
-              :exchanges="cryptocurrencies"
-            />
-            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Buy Now</BaseButton>
-          </div>
-        </div>
-        <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
-      </BaseSection>
-    </section>
+  <SectionSolutions />
 
-    <!-- Partners section -->
-    <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-        <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Trusted Partners Worldwide</h3>
-        <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p>
-        <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
-          <LandingPartnerImage
-            v-for="img in ['clever.png', 'diamon-cutts.png', 'swiss-finance.png', 'gambio.png']"
-            :key="img"
-            :img="img"
-          />
-        </div>
-      </div>
-    </section>
+  <SectionFeatures />
 
-    <!-- Credit card section -->
-    <section class="w-full my-36">
-      <BaseSection data-aos="fade-down">
-        <div class="col-span-12 lg:col-span-7">
-          <div class="w-full">
-            <img :src="require('~/assets/img/nefa-cc.webp')" class="w-[95%]" alt="" />
-          </div>
-        </div>
-        <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
-          <h2 class="text-4xl font-semibold">
-            Introducing the <span class="text-header-gradient">NEFA</span> Credit Card
-          </h2>
-          <p class="paragraph">Subject to cardholder and rewards terms which will be available at application.</p>
-          <ul class="space-y-4 sm:space-y-2">
-            <LandingListItem title="Up to 3% back on purchases" />
-            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <LandingListItem title="No annual fee" />
-          </ul>
-          <BaseButton
-            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
-            >Join the waitlist</BaseButton
-          >
-        </div>
-      </BaseSection>
-    </section>
-
-    <!-- Advanced trading tools section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
-      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <LandingTradingToolImage class="sm:hidden" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-          <h2 class="text-4xl font-semibold">Advanced Trading <span class="text-header-gradient">Tools</span></h2>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
-            <p class="paragraph text-sm xl:text-base">
-              We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-              reliable order execution and constant uptime.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and
-              HTTP APIs. Connect to our WebSocket for real-time data streaming.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Customer Support</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers
-              for partners.
-            </p>
-          </div>
-          <div class="flex flex-col sm:flex-row">
-            <BaseButton class="px-10 py-4 bg-inherit text-gradient border border-[#4A8FF6] text-base">
-              Get Started
-            </BaseButton>
-            <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full">
-              Learn More
-            </BaseButton>
-          </div>
-        </div>
-        <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
-      </div>
-    </section>
-
-    <!-- Industry-leading security section -->
-    <section class="w-full my-24">
-      <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img :src="require('~/assets/img/industry-leading-security.webp')" class="w-full" alt="" />
-          </div>
-        </div>
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
-          <h2 class="text-4xl font-semibold">Industry-leading security from day one</h2>
-          <ul class="space-y-8 sm:space-y-4">
-            <LandingListItem title="Safety, security and compliance">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                NEFA is a licensed New York trust company that undergoes regular bank exams and is subject to the
-                cybersecurity audits conducted by the New York Department of Financial Services.
-                <span class="underline">Learn more</span> about our commitment to security.
-              </p>
-            </LandingListItem>
-            <LandingListItem title="Hardware security keys">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                With NEFA you can secure your account with a hardware security key via WebAuthn.
-              </p>
-            </LandingListItem>
-            <LandingListItem title="SOC Certifications">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                NEFA is <span class="underline">SOC 1 Type 2</span> and
-                <span class="underline">SOC 2 Type 2</span> compliant. We are the world’s first cryptocurrency exchange
-                and custodian to complete these exams.
-              </p>
-            </LandingListItem>
-          </ul>
-        </div>
-      </div>
-    </section>
+<SectionGuarantee />   
 
     <!-- Getting started section -->
     <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
       <div class="w-full py-16 flex flex-col items-center">
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
-          Get started in just a few minutes
+          Nuestra forma de trabajo
         </h2>
         <div
           data-aos="fade-up"
@@ -275,7 +76,6 @@
       </div>
     </section>
 
-    <!-- FAQ section -->
     <section class="w-full my-24">
       <BaseSection>
         <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
@@ -285,7 +85,7 @@
         </div>
         <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
           <span class="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2">Support</span>
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
+          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Preguntas frecuentes sobre digitalización</h2>
 
           <ul class="shadow-box">
             <BaseAccordion v-for="(accordion, index) in accordions" :key="index" :accordion="accordion" />
@@ -293,6 +93,38 @@
         </div>
       </BaseSection>
     </section>
+
+
+    <section class="w-full my-36">
+      <BaseSection data-aos="fade-down">
+        <div class="col-span-12 lg:col-span-7">
+          <div class="w-full">
+            <img :src="require('~/assets/img/nefa-cc.webp')" class="w-[95%]" alt="" />
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
+          <h2 class="text-4xl font-semibold">
+            Beneficios de la <span class="text-header-gradient">DIGITALIZACIÓN</span>
+          </h2>
+          <p class="paragraph">Subject to cardholder and rewards terms which will be available at application.</p>
+          <ul class="space-y-4 sm:space-y-2">
+            <LandingListItem title="Up to 3% back on purchases" />
+            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
+            <LandingListItem title="No annual fee" />
+          </ul>
+          <BaseButton
+            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
+            >Join the waitlist</BaseButton
+          >
+        </div>
+      </BaseSection>
+    </section>
+
+
+    <SectionCustomers />
+
+    <SectionContact />
+
 
     <div class="w-full my-10 flex justify-center">
       <a
@@ -302,7 +134,7 @@
         href="#navbar"
         class="px-6 py-3 flex items-center space-x-2 bg-[#FAFAFA] hover:bg-gray-100 hover:shadow-md border border-[#DDDDDD] rounded-md text-gray-700"
       >
-        <span>Back to top</span>
+        <span>Volver arriba</span>
         <ArrowUpIcon :size="20" />
       </a>
     </div>
