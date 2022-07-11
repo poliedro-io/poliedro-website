@@ -1,38 +1,52 @@
 <template>
-      <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-         <h2 class="text-4xl font-semibold">
-            Algunos de nuestros clientes
-          </h2>        <p data-aos="flip-down" class="paragraph">
-            Somos partners digitales de nuestros clientes... bla bla bla
-            </p>
-        <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
-          <LandingPartnerImage
-            v-for="img in ['clever.png', 'diamon-cutts.png', 'swiss-finance.png', 'gambio.png']"
-            :key="img"
-            :img="img"
-          />
-        </div>
-      </div>
-    </section>
+  <BaseSection :id="'customers'">
+    <div class="lg:text-center">
+      <BaseHeader
+        :supertitle="'CLientes'"
+        :title="'Algunos de nuestros clientes'"
+        :subtitle="'Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu empresa.'"
+      />
+    </div>
+
+    <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
+      <LandingPartnerImage
+        v-for="customer in customers"
+        :key="customer.name"
+        :img="customer.logo"
+      />
+    </div>
+  </BaseSection>
 </template>
 
 <script>
 export default {
-    data(){
-        return {
-            customers: [
-                {
-                    name: '',
-                    url: '',
-                    logo: ''
-                }
-            ]
-        }
+  data() {
+    return {
+      customers: [
+        {
+          name: '',
+          logo: 'clever.png',
+          url: ''
+        },
+        {
+          name: '',
+          logo: 'diamon-cutts.png',
+          url: ''
+        },
+        {
+          name: '',
+          logo: 'swiss-finance.png',
+          url: ''
+        },
+        {
+          name: '',
+          logo: 'gambio.png',
+          url: ''
+        },
+      ],
     }
+  },
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

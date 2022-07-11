@@ -1,10 +1,18 @@
 <template>
-  <div class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden" v-bind="$attrs">
-    <slot></slot>
-  </div>
+   <section :id="id" v-bind="$attrs" class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <slot></slot>
+    </div>
+   </section>
 </template>
 <script>
 export default {
   name: 'BaseSection',
+  props: ['id'],
+  metaInfo(){
+    return {
+      id: this.id
+    }
+  }
 }
 </script>

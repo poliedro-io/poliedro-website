@@ -1,8 +1,8 @@
 <template>
-  <nav id="navbar" class="relative z-10 w-full text-neutral-800">
+  <nav id="navbar" class="fixed bg-white top-0 left-0 right-0 z-10 w-full text-neutral-800 shadow-lg">
     <div class="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
-        <div class="w-full flex flex-row items-center justify-between py-6">
+        <div class="w-full flex flex-row items-center justify-between py-2">
           <div>
             <img :src="require('~/assets/img/logo/nefa.svg')" class="w-24 xl:w-28" alt="Nefa Logo" />
           </div>
@@ -37,12 +37,12 @@ export default {
       open: false,
       dropdownNavbar: false,
       sections: [
-        {title: 'Soluciones', url: '#'},
-        {title: 'Características', url: '#'},
-        {title: 'Garantías', url: '#'},
+        {title: 'Soluciones', url: '#solutions'},
+        {title: 'Características', url: '#features'},
+        {title: 'Garantías', url: '#guarantees'},
         {title: 'Tecnologías', url: '#'},
-        {title: 'Clientes', url: '#'},
-        {title: 'Contacto', url: '#'},
+        {title: 'Clientes', url: '#customers'},
+        {title: 'Contacto', url: '#contact'},
       ]
     }
   },
