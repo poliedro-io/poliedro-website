@@ -1,6 +1,13 @@
 <template>
-  <BaseSection style="margin-top: 92px" class="h-[70vh]" id="hero">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-x-8">
+  <BaseSection :noPadding="true" style="margin-top: 92px" class="bg-gradient min-h-[70vh]" id="hero">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
+
+         <img
+        class="lg:order-last"
+          data-aos="fade-up"
+          data-aos-once="true"
+          :src="require('~/assets/img/hero-image.webp')"
+        />
         <div>
           <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
             >Digitalízate</span
@@ -34,11 +41,8 @@
             </BaseButton>
           </div>
         </div>
-        <!-- <img
-          data-aos="fade-up"
-          data-aos-once="true"
-          :src="require('~/assets/img/hero-image.webp')"
-        /> -->
+
+       
       </div>
     </BaseSection>
 </template>
@@ -57,4 +61,9 @@ export default {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* .bg-gradient { */
+  /* background: rgb(57, 132, 244);
+  background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
+  -webkit-text-fill-color: transparent; */
+/* } */
 </style>
