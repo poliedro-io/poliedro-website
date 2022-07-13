@@ -40,9 +40,9 @@ export default {
         {title: 'Soluciones', url: '#solutions'},
         {title: 'Características', url: '#features'},
         {title: 'Garantías', url: '#guarantees'},
-        {title: 'Tecnologías', url: '#'},
         {title: 'Clientes', url: '#customers'},
         {title: 'Contacto', url: '#contact'},
+        // {title: 'Tecnologías', url: '#'},
       ]
     }
   },

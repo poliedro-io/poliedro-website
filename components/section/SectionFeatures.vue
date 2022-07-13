@@ -1,8 +1,8 @@
 <template>
-  <BaseSection :id="'features'">
+  <BaseSection id="features" bgColor="indigo-50">
     <div class="lg:grid lg:grid-cols-2 lg:gap-28">
       <div>
-        <BaseHeader :supertitle="'características'" :title="'Desarrollamos aplicaciones modernas'" />
+        <BaseHeader supertitle="características" title="Desarrollamos aplicaciones modernas" />
 
         <BaseParagraph>
           En Poliedro nos apasiona la tecnología, y procuramos estar siempre al día con las últimas herramientas

@@ -1,26 +1,24 @@
 <template>
-  <BaseSection :id="'digitalization'">
+  <BaseSection id="digitalization" bgColor="indigo-50">
     <div class="lg:grid lg:grid-cols-2 lg:gap-8">
       <div>
-        <BaseHeader
-          :title="'Beneficios de la digitalización'"
-          :supertitle="'para considerar'"
-        />
+        <BaseHeader :title="'Beneficios de la digitalización'" :supertitle="'para considerar'" />
 
-       
         <BaseParagraph>
-         Hoy en día las tecnologías nos permiten facilitar la forma en que trabajamos. A medida que estas tecnologías se hacen mas acequibles van transformando todos los ámbitos de la sociedad.
+          Hoy en día las tecnologías nos permiten facilitar la forma en que trabajamos. A medida que estas tecnologías
+          se hacen mas acequibles van transformando todos los ámbitos de la sociedad.
         </BaseParagraph>
 
-        <ul class="space-y-4 my-8">
-          <li v-for="(item, index) of benefits" v-bind:key="index">
-            <div class="flex items-center space-x-4 ml-8">
-              <CheckIcon :size="24" class="text-[#0c66ee]" />
-              <span class="font-semibold text-gray-600">{{ item }}</span>
-            </div>
-          </li>
-        </ul>
-
+        <dl class="my-8 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-16">
+          <div v-for="(item, index) in benefits" v-bind:key="index" class="relative">
+            <dt>
+              <div class="flex items-center justify-center h-14 w-14 rounded-md bg-indigo-500 text-white p-4">
+                <!-- <object class="h-8 w-8 icon" :data="require('~/assets/img/solutions/' + item.icon)"></object> -->
+              </div>
+              <p class="mt-4 text-lg leading-6 font-medium text-gray-900">{{ item.text }}</p>
+            </dt>
+          </div>
+        </dl>
 
         <BaseButton
           class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
@@ -28,7 +26,7 @@
         >
       </div>
 
-      <BaseImage :name="'nefa-cc.webp'" />
+      <BaseImage class="hidden lg:block" :name="'nefa-cc.webp'" />
     </div>
   </BaseSection>
 </template>
@@ -40,13 +38,31 @@ export default {
   data() {
     return {
       benefits: [
-        'Impulsa la eficiencia', 
-        'Agiliza los procesos',
-        'Reduce costos',
-        'Estimula la productividad',
-        'Disminuye errores humanos',
-        'Centraliza la información'
-        ]
+        {
+          text: 'Impulsa la eficiencia',
+          icon: '',
+        },
+        {
+          text: 'Agiliza los procesos',
+          icon: '',
+        },
+        {
+          text: 'Reduce costos',
+          icon: '',
+        },
+        {
+          text: 'Estimula la productividad',
+          icon: '',
+        },
+        {
+          text: 'Disminuye errores humanos',
+          icon: '',
+        },
+        {
+          text: 'Centraliza la información',
+          icon: '',
+        },
+      ],
     }
   },
 }

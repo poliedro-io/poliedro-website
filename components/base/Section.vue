@@ -1,5 +1,5 @@
 <template>
-   <section :id="id" v-bind="$attrs" class="py-32 bg-white">
+   <section :id="id" v-bind="$attrs" :class="'py-32 bg-' + bgColor">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <slot></slot>
     </div>
@@ -8,10 +8,11 @@
 <script>
 export default {
   name: 'BaseSection',
-  props: ['id'],
+  props: ['id', 'bgColor'],
   metaInfo(){
     return {
-      id: this.id
+      id: this.id,
+      bgColor: this.bgColor || 'white'
     }
   }
 }

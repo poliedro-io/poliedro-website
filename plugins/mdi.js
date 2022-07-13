@@ -10,6 +10,7 @@ import CheckCircleIcon from 'vue-material-design-icons/CheckCircle.vue'
 import SegmentIcon from 'vue-material-design-icons/Segment.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 import CheckIcon from 'vue-material-design-icons/Check.vue'
+import CheckDecagramOutlineIcon from 'vue-material-design-icons/CheckDecagramOutline.vue'
 
 const components = {
   ChevronDownIcon,
@@ -20,6 +21,7 @@ const components = {
   ArrowUpIcon,
   ArrowRightIcon,
   CheckCircleIcon,
+  CheckDecagramOutlineIcon,
   CheckIcon,
   SegmentIcon,
   CloseIcon,

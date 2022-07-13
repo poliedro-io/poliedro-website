@@ -1,5 +1,5 @@
 <template>
-  <img :src="require('~/assets/img/' + name)" :alt="name" />
+  <img style="mix-blend-mode: multiply;" :src="require('~/assets/img/' + name)" :alt="name" />
 </template>
 <script>
 export default {

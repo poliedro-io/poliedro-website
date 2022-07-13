@@ -1,26 +1,28 @@
 <template>
-  <BaseSection :id="'solutions'">
-    <div class="lg:text-center mb-16">
-      <BaseHeader
-        :supertitle="'lo que hacemos'"
-        :title="'Somos sastres digitales'"
-        :subtitle="'Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu empresa.'"
-      />
-    </div>
+  <BaseSection id="solutions">
+      <div class="lg:text-center">
+        <BaseHeader
+          :supertitle="'lo que hacemos'"
+          :title="'Somos sastres digitales'"
+          :subtitle="'Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu empresa.'"
+        />
+      </div>
 
-      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-16">
-        <div v-for="(item, index) in items" v-bind:key="index" class="relative">
-          <dt>
-            <div class="absolute flex items-center justify-center h-14 w-14 rounded-md bg-indigo-500 text-white p-4">
-              <object class="h-8 w-8 icon" :data="require('~/assets/img/solutions/' + item.icon)"></object>
-            </div>
-            <p class="ml-20 text-lg leading-6 font-medium text-gray-900">{{ item.title }}</p>
-          </dt>
-          <!-- <dd class="mt-2 ml-20 text-base text-gray-500">
+      <div class="my-16">
+        <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-16">
+          <div v-for="(item, index) in items" v-bind:key="index" class="relative">
+            <dt>
+              <div class="absolute flex items-center justify-center h-14 w-14 rounded-md bg-indigo-500 text-white p-4">
+                <object class="h-8 w-8 icon" :data="require('~/assets/img/solutions/' + item.icon)"></object>
+              </div>
+              <p class="ml-20 text-lg leading-6 font-medium text-gray-900">{{ item.title }}</p>
+            </dt>
+            <dd class="mt-2 ml-20 text-base text-gray-500">
               {{ item.description }}
-            </dd> -->
-        </div>
-      </dl>
+            </dd>
+          </div>
+        </dl>
+      </div>
   </BaseSection>
 </template>
 
