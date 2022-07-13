@@ -3,7 +3,7 @@
   <BaseSection>
 
   <div class="md:text-center">
-    <BaseHeader :supertitle="'cómo trabajamos'" :title="'Nuestra forma de trabajo'" :subtitle="'Pasos bla bla bla'" />
+    <BaseHeader :supertitle="'cómo trabajamos'" :title="'Desarrollo paso a paso'" :subtitle="'Pasos bla bla bla'" />
   </div>
 
     <div
@@ -24,21 +24,21 @@ export default {
       steps: [
         {
           img: 'sign-up.png',
-          title: 'Sign Up',
+          title: 'Toma de requerimientos',
           description:
-            'Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your profile',
+            'Mediante una reunión virtual recabamos la información concerniente a tu problemática y a la forma en que trabaja tu empresa.',
         },
         {
           img: 'fund.png',
-          title: 'Fund',
+          title: 'Elaboración del presupuesto',
           description:
-            'Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet',
+            'Generamos un presupuesto con el detalle de las funcionalidades necesarias para abordar tu problema, indicando las diferentes etapas del proceso, sus plazos y montos.',
         },
         {
           img: 'buy-crypto.png',
-          title: 'Buy Crypto',
+          title: 'Desarrollo de la solución',
           description:
-            'Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to your friends anywhere',
+            'Aprobado el presupuesto comenzamos con el desarrollo de la solución, desplegando módulos funcionales en cada etapa de desarrollo para recibir feedback y hacer correcciones.',
         },
       ],
     }
