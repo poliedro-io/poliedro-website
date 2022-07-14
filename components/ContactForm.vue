@@ -1,5 +1,5 @@
 <template>
-  <form name="contact" class="md:flex md:items-center" method="POST" data-netlify="true">
+  <form name="contact" class="md:flex md:items-center" netlify>
     <div class="md:shadow-lg rounded-md">
       <div class="md:px-4 md:py-5 md:bg-white md:p-6">
         <div class="grid grid-cols-2 gap-4 md:gap-6">
@@ -62,7 +62,6 @@
       </div>
       <div class="md:px-6 py-3 md:bg-gray-50 text-right">
         <BaseButton type="submit">Enviar</BaseButton>
-
       </div>
     </div>
   </form>
