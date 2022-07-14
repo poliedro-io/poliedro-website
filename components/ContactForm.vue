@@ -1,5 +1,5 @@
 <template>
-  <form name="contact" class="md:flex md:items-center" netlify>
+  <form name="contact" method="POST" class="md:flex md:items-center" netlify>
     <div class="md:shadow-lg rounded-md">
       <div class="md:px-4 md:py-5 md:bg-white md:p-6">
         <div class="grid grid-cols-2 gap-4 md:gap-6">
