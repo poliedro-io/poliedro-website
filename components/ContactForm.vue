@@ -6,9 +6,9 @@
           <div class="col-span-2 sm:col-span-1">
             <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
             <input
+              id="email"
               type="text"
               name="email"
-              id="email"
               autocomplete="email"
               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
             />
@@ -21,16 +21,16 @@
               name="area"
               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
             >
-              <option v-for="item of items" v-bind:key="item">{{ item }}</option>
+              <option v-for="item of items" :key="item">{{ item }}</option>
             </select>
           </div>
 
            <div class="col-span-2 sm:col-span-1">
             <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
             <input
+              id="name"
               type="text"
               name="name"
-              id="name"
               autocomplete="name"
               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
             />
@@ -39,9 +39,9 @@
           <div class="col-span-2 sm:col-span-1">
             <label for="commune" class="block text-sm font-medium text-gray-700">Comuna</label>
             <input
+              id="commune"
               type="text"
               name="commune"
-              id="commune"
               class="mt-1 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
             />
           </div>

@@ -12,7 +12,7 @@
     <div data-aos="fade-up" class="flex space-y-8 flex-wrap items-center justify-center">
       <a
         v-for="(item, index) of customers"
-        v-bind:key="index"
+        :key="index"
         target="_blank"
         :href="item.url"
         class="brand h-[100px] w-[120px] md:w-[160px] 2xl:w-[200px] flex items-center justify-center mx-4 md:mx-12"

@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="benefits" bgColor="primary-50">
+  <BaseSection id="benefits" bg-color="primary">
     <div class="lg:grid lg:grid-cols-2 lg:gap-8">
       <div>
         <BaseHeader :title="'Beneficios de la digitalización'" :supertitle="'para considerar'" />
@@ -10,7 +10,7 @@
         </BaseParagraph>
 
         <dl class="my-8 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-16">
-          <div v-for="(item, index) in benefits" v-bind:key="index" class="relative">
+          <div v-for="(item, index) in benefits" :key="index" class="relative">
             <dt>
               <div class="flex items-center justify-center h-14 w-14 rounded-md bg-primary-500 text-white p-4">
                 <!-- <object class="h-8 w-8 icon" :data="require('~/assets/img/solutions/' + item.icon)"></object> -->
@@ -20,7 +20,9 @@
           </div>
         </dl>
 
-        <BaseButton class="mt-4" :outlined="true"
+        <BaseButton 
+        v-smooth-scroll
+          href="#contact" class="mt-4" :outlined="true"
           >Contactar</BaseButton
         >
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="contact" bgColor="primary-50">
+  <BaseSection id="contact" bg-color="primary-50">
     <div class="md:grid md:grid-cols-2 md:gap-28">
       <div>
         <BaseHeader supertitle="contacto" title="Cuéntanos tu problema" />

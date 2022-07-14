@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="features" bgColor="primary-50">
+  <BaseSection id="features" bg-color="primary-50">
     <div class="lg:grid lg:grid-cols-2 lg:gap-28">
       <div>
         <BaseHeader supertitle="características" title="Desarrollamos aplicaciones modernas" />

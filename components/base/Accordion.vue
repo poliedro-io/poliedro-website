@@ -9,7 +9,7 @@
     </button>
 
     <transition name="slide">
-      <div v-if="selected" class="relative overflow-hidden transition-all duration-700" style="">
+      <div v-if="selected" class="relative overflow-hidden transition-all duration-700">
         <div class="py-2">
           <p class="text-sm text-gray-700 tracking-wide leading-relaxed">
             {{ accordion.description }}

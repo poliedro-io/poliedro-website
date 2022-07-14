@@ -6,21 +6,20 @@
           <div>
             <span class="sr-only">Descargar Brochure</span>
             <button
-              v-on:click="downloadBrochure"
-              href=""
               type="button"
               class="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              @click="downloadBrochure"
             >
               <DownloadIcon />
             </button>
 
             <button
               id="menu-button"
-              v-on:click="toggleMenu"
               type="button"
               class="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
+              @click="toggleMenu"
             >
               <span class="sr-only">Abrir Menu</span>
               <MenuIcon />
@@ -35,9 +34,9 @@
           <div class="hidden sm:block">
             <div class="flex space-x-4">
               <a
-                v-smooth-scroll
                 v-for="(item, index) of sections"
-                v-bind:key="index"
+                :key="index"
+                v-smooth-scroll
                 :href="item.id"
                 :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
                 aria-current="page"
@@ -45,7 +44,7 @@
               >
             </div>
           </div>
-          <button v-on:click="downloadBrochure" class="navbar-button hidden sm:block">Descargar Brochure</button>
+          <button class="navbar-button hidden sm:block" @click="downloadBrochure">Descargar Brochure</button>
         </div>
       </div>
     </div>
@@ -53,13 +52,13 @@
     <div id="mobile-menu" :class="'overflow-hidden sm:hidden ' + (!isMenuActive ? 'closed' : '')">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <a
-          v-bind:key="index"
-          v-on:click="isMenuActive = false"
-          v-smooth-scroll
           v-for="(item, index) of sections"
+          :key="index"
+          v-smooth-scroll
           :href="item.id"
           :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
           aria-current="page"
+          @click="isMenuActive = false"
           >{{ item.title }}</a
         >
       </div>
@@ -115,21 +114,7 @@ export default {
     },
   },
 
-  beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
-    document.addEventListener('click', (event) => {
-      const navbar = document.getElementById('navbar')
-      const menu = document.getElementById('mobile-menu')
-      const isClickOnNavbar = navbar.contains(event.target)
-      const isClickOnMenu = menu.contains(event.target)
-      if (!isClickOnNavbar && !isClickOnMenu) {
-        this.isMenuActive = false
-      }
-    })
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
+ 
 }
 </script>
 
@@ -144,18 +129,5 @@ export default {
   transition: opacity 150ms ease-out, height 150ms ease-in-out 150ms !important;
   height: 0 !important;
   opacity: 0 !important;
-}
-
-.navbar-button {
-  @apply text-white bg-primary-700 hover:bg-primary-800 px-3 py-2 rounded-md text-base font-medium;
-}
-
-.navbar-item {
-  @apply text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium;
-}
-
-.navbar-item.selected {
-  transition: background 150ms ease-in-out;
-  @apply bg-gray-900 text-white;
 }
 </style>

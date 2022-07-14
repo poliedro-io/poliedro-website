@@ -10,7 +10,7 @@
 
       <div class="my-16">
         <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-16">
-          <div v-for="(item, index) in items" v-bind:key="index" class="relative">
+          <div v-for="(item, index) in items" :key="index" class="relative">
             <dt>
               <div class="absolute flex items-center justify-center h-14 w-14 rounded-md bg-primary-500 text-white p-4">
                 <object class="h-8 w-8 icon" :data="require('~/assets/img/solutions/' + item.icon)"></object>

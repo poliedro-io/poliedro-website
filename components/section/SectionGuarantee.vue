@@ -11,7 +11,7 @@
         </BaseParagraph>
 
         <ul class="space-y-4 mt-8">
-          <li v-for="(item, index) of guarantees" v-bind:key="index">
+          <li v-for="(item, index) of guarantees" :key="index">
             <div class="flex items-center space-x-4 ml-8">
               <CheckDecagramOutlineIcon :size="28" class="text-primary-600" />
               <span class="font-semibold text-gray-600">{{ item }}</span>
