@@ -29,7 +29,7 @@
           class="max-w-md flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4"
         >
           <BaseButton v-smooth-scroll href="#contact" outlined class="flex-1"> Contactar </BaseButton>
-          <BaseButton v-on:click="downloadBrochure" outlined class="flex-1"> Descargar Brochure </BaseButton>
+          <BaseButton @click="downloadBrochure" outlined class="flex-1"> Descargar Brochure </BaseButton>
         </div>
       </div>
     </div>

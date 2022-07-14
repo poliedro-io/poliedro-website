@@ -8,7 +8,7 @@
           empresa.</BaseParagraph
         >
 
-        <BaseImage name="contact.jpg" />
+        <BaseImage class="hidden md:block" name="contact.jpg" />
       </div>
 
       <ContactForm />
