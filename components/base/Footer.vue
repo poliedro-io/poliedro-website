@@ -1,74 +1,90 @@
 <template>
   <footer class="max-w-screen-xl px-8 mx-auto">
     <div class="w-full border-y border-[#DDDDDD]">
-      <div class="w-full flex flex-wrap space-y-6">
-        <div
-          class="w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-6 py-6 sm:py-12 sm:space-x-10 sm:border-r border-[#DDDDDD]"
-        >
-          <div class="sm:hidden xl:block mb-6 sm:mb-0">
-            <a href="#">
-              <img :src="require('~/assets/img/logo/nefa.svg')" class="w-24 -mt-2" alt="Nefa Logo" />
-            </a>
-          </div>
+      <div class="w-full lg:grid lg:grid-cols-3 lg:gap-8 lg:divide-x">
+        <a class="pl-4 py-6" v-smooth-scroll href="#hero">
+          <img
+            :src="require('~/assets/img/logo-lg.svg')"
+            class="filter invert opacity-70 hover:opacity-100 h-16"
+            alt="Logo Poliedro"
+          />
+        </a>
+
+        <div class="pl-4 py-6">
+          <p class="text-lg text-semibold text-gray-800 mb-6">Contacto</p>
           <ul class="space-y-4">
-            <NavLink name="Cryptocurrency" url="#" />
-            <NavLink name="Exchanges" url="#" />
-            <NavLink name="Watchlist" url="#" />
-            <NavLink name="Portfolio" url="#" />
-            <NavLink name="NFT" url="#" />
+            <div v-for="(item, index) of contact" :key="index" class="flex space-x-4">
+              <component v-bind:is="item.icon"></component>
+              <NavLink :name="item.text" :url="item.url" />
+            </div>
           </ul>
         </div>
-        <div
-          class="w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 xl:border-r border-[#DDDDDD]"
-        >
+
+        <div class="pl-4 py-6">
+          <p class="text-lg text-semibold text-gray-800 mb-6">Secciones</p>
           <ul class="space-y-4">
-            <NavLink name="Products" url="#" />
-            <NavLink name="About Us" url="#" />
-            <NavLink name="Careers" url="#" />
-            <NavLink name="Blog" url="#" />
-            <NavLink name="Security" url="#" />
+            <NavLink v-for="(item, index) of sections" :key="index" :name="item.text" :url="item.url" />
           </ul>
-        </div>
-        <div
-          class="w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 sm:border-r border-[#DDDDDD]"
-        >
-          <ul class="space-y-4">
-            <NavLink name="Help Center" url="#" />
-            <NavLink name="Contact Us" url="#" />
-            <NavLink name="System Status" url="#" />
-            <NavLink name="Area of Avaibility" url="#" />
-            <NavLink name="Privacy Policy" url="#" />
-          </ul>
-        </div>
-        <div
-          class="sm:px-10 py-6 sm:py-12 w-full sm:w-1/2 xl:w-[22rem] space-y-4 border-t sm:border-t-0 border-[#DDDDDD]"
-        >
-          <h5 class="text-sm font-medium text-[#666666] focus:outline-none focus:shadow-outline">Newsletter</h5>
-          <p class="text-sm text-[#666666] focus:outline-none focus:shadow-outline">
-            Never miss anything crypto when <br class="sm:hidden" />you're on the go
-          </p>
-          <div class="flex items-center space-x-2">
-            <input
-              type="text"
-              class="w-full px-2 py-4 sm:py-3 rounded-lg sm:rounded-md text-sm focus:outline-none border border-[#AAAAAA] placeholder-[#888]"
-              placeholder="Enter your email"
-            />
-            <button
-              class="bg-blue-gradient px-4 py-4 sm:py-3 rounded-md text-white hover:shadow-md transition duration-300"
-            >
-              <ArrowRightIcon :size="20" />
-            </button>
-          </div>
         </div>
       </div>
     </div>
     <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
-      &copy; Copyright 2022 NEFA LLC. All rights reserved
+      &reg; Poliedro ltda. 2022. Todos los derechos reservados
     </div>
   </footer>
 </template>
 <script>
+import InstagramIcon from 'vue-material-design-icons/Instagram.vue'
+import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
+import PhoneOutlineIcon from 'vue-material-design-icons/PhoneOutline.vue'
+import EmailOutlineIcon from 'vue-material-design-icons/EmailOutline.vue'
+import WhatsappIcon from 'vue-material-design-icons/Whatsapp.vue'
 export default {
+  components: {
+    InstagramIcon,
+    FacebookIcon,
+    PhoneOutlineIcon,
+    EmailOutlineIcon,
+    WhatsappIcon,
+  },
   name: 'BaseFooter',
+  data() {
+    return {
+      contact: [
+        {
+          text: '+569 64033243',
+          icon: WhatsappIcon,
+          url: 'https://wa.me/56964033243',
+        },
+        {
+          text: '+569 64033243',
+          icon: PhoneOutlineIcon,
+          url: 'tel:56964033243',
+        },
+        {
+          text: 'contacto@poliedro.io',
+          icon: EmailOutlineIcon,
+          url: 'mailto: contacto@poliedro.io',
+        },
+        {
+          text: '@poliedro.io',
+          icon: InstagramIcon,
+          url: 'https://www.instagram.com/poliedro.io/',
+        },
+        // {
+        //   text: 'Facebook',
+        //   icon: FacebookIcon,
+        //   url: 'facebook.svg',
+        // },
+      ],
+      sections: [
+        { text: 'Servicios', url: '#services' },
+        { text: 'Funcionalidades', url: '#features' },
+        { text: 'Garantías', url: '#guarantees' },
+        { text: 'Clientes', url: '#customers' },
+        { text: 'Contacto', url: '#contact' },
+      ],
+    }
+  },
 }
 </script>

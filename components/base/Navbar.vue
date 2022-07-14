@@ -1,7 +1,7 @@
 <template>
   <div class="fixed top-0 left-0 right-0 z-10">
     <nav id="navbar" :class="'relative bg-gray-800 ' + (isMenuActive ? '' : 'shadow-xl')">
-      <div class="max-w-7xl mx-auto px-2 lg:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-2 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
             <button
@@ -19,9 +19,9 @@
           </div>
 
           <div class="flex-1 flex items-center lg:items-stretch lg:justify-between">
-            <div class="flex-shrink-0 flex items-center">
+            <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
               <img class="h-8 w-auto" src="~/assets/img/logo-lg.svg" alt="Workflow" />
-            </div>
+            </a>
             <div class="hidden lg:block">
               <div class="flex space-x-4">
                 <a
@@ -90,7 +90,6 @@ export default {
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
     document.addEventListener('click', (event) => {
-      console.log(event)
       if (this.isMenuActive) {
         const navbar = document.getElementById('navbar')
         const menu = document.getElementById('mobile-menu')

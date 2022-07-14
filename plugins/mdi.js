@@ -13,6 +13,10 @@ import CheckIcon from 'vue-material-design-icons/Check.vue'
 import CheckDecagramOutlineIcon from 'vue-material-design-icons/CheckDecagramOutline.vue'
 import DownloadIcon from 'vue-material-design-icons/Download.vue'
 import MenuIcon from 'vue-material-design-icons/Menu.vue'
+// import InstagramIcon from 'vue-material-design-icons/Instagram.vue'
+// import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
+// import PhoneIcon from 'vue-material-design-icons/Phone.vue'
+// import EmailIcon from 'vue-material-design-icons/Email.vue'
 
 const components = {
   ChevronDownIcon,
@@ -29,6 +33,11 @@ const components = {
   CloseIcon,
   DownloadIcon,
   MenuIcon,
+  
+  // InstagramIcon,
+  // EmailIcon,
+  // PhoneIcon,
+  // FacebookIcon
 }
 
 Object.entries(components).forEach(([name, component]) => {

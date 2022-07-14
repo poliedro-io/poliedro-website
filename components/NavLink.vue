@@ -1,8 +1,8 @@
 <template>
   <li class="w-full">
     <a
-     v-smooth-scroll
-      class="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline"
+     :v-smooth-scroll="url.includes('#')"
+      class="py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline"
       :href="url"
     >
       {{ name }}
@@ -18,6 +18,7 @@ export default {
     },
     url: {
       type: String,
+      default: '',
       required: true,
     },
   },

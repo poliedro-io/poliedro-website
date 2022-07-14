@@ -2,10 +2,11 @@
   <BaseSection id="contact" bg-color="primary-50">
     <div class="md:grid md:grid-cols-2 md:gap-28">
       <div>
-        <BaseHeader supertitle="contacto" title="Cuéntanos tu problema" />
+        <BaseHeader supertitle="Contáctanos" title="Empecemos a trabajar juntos hoy mismo" />
         <BaseParagraph>
           Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu
-          empresa.</BaseParagraph
+          empresa. [agregar un texto que de la confianza para escribir un mensaje y saber que responderán al toque]
+          </BaseParagraph
         >
       <ContactForm />
 
@@ -14,7 +15,7 @@
         <BaseImage class="hidden md:block" name="contact.jpg" />
     </div>
 
-    <div class="mt-8 flex justify-center">
+    <div class="mt-16 flex justify-center">
       <BaseButton v-smooth-scroll outlined href="#hero">
         <ArrowUpIcon /> <span class="ml-4">Volver arriba</span>
       </BaseButton>
