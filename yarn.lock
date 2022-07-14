@@ -1008,13 +1008,6 @@
     "mkdirp" "^1.0.4"
     "rimraf" "^3.0.2"
 
-"@nuxt-hero-icons/outline@^1.0.1":
-  "integrity" "sha512-2kMugIcVzU96BJZTmCIJTyruHQzZFS0KE66Wkfa+vWlQTZ7CESL4npVFfek2ENQjQvT075x2RyIhcIpWOQIupw=="
-  "resolved" "https://registry.npmjs.org/@nuxt-hero-icons/outline/-/outline-1.0.1.tgz"
-  "version" "1.0.1"
-  dependencies:
-    "heroicons" "git+https://github.com/tailwindlabs/heroicons.git#master"
-
 "@nuxt/babel-preset-app@2.15.8":
   "integrity" "sha512-z23bY5P7dLTmIbk0ZZ95mcEXIEER/mQCOqEp2vxnzG2nurks+vq6tNcUAXqME1Wl6aXWTXlqky5plBe7RQHzhQ=="
   "resolved" "https://registry.npmjs.org/@nuxt/babel-preset-app/-/babel-preset-app-2.15.8.tgz"
@@ -4599,10 +4592,6 @@
   "integrity" "sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw=="
   "resolved" "https://registry.npmjs.org/he/-/he-1.2.0.tgz"
   "version" "1.2.0"
-
-"heroicons@git+https://github.com/tailwindlabs/heroicons.git#master":
-  "resolved" "git+ssh://git@github.com/tailwindlabs/heroicons.git#db29d11448c947c42822aca42026a9f14806530d"
-  "version" "1.0.6"
 
 "hex-color-regex@^1.1.0":
   "integrity" "sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ=="
