@@ -7,7 +7,7 @@
     netlify-honeypot="test-field"
   >
     <!-- action="/form" -->
-    
+
     <input type="hidden" name="form-name" value="contact" />
 
     <div class="md:shadow-lg rounded-md">
@@ -31,7 +31,6 @@
             <label for="area" class="block text-sm font-medium text-gray-700">Rubro</label>
             <select
               name="area"
-              required
               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
             >
               <option :value="null" selected>Ninguno</option>
@@ -39,24 +38,16 @@
             </select>
           </div>
 
-          <div class="col-span-2 sm:col-span-1">
-            <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+          <div class="col-span-2">
+            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
             <input
               type="text"
-              name="name"
+              name="nombre"
               autocomplete="name"
               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
             />
           </div>
 
-          <div class="col-span-2 sm:col-span-1">
-            <label for="commune" class="block text-sm font-medium text-gray-700">Comuna</label>
-            <input
-              type="text"
-              name="commune"
-              class="mt-1 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-            />
-          </div>
 
           <div class="col-span-2">
             <label for="message" class="block text-sm font-medium text-gray-700">Mensaje*</label>

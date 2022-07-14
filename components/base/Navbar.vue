@@ -1,69 +1,71 @@
 <template>
-  <nav id="navbar" class="shadow-lg fixed top-0 left-0 right-0 bg-gray-800 z-10">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-16">
-        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
-          <div>
-            <span class="sr-only">Descargar Brochure</span>
-            <button
-              type="button"
-              class="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              @click="downloadBrochure"
-            >
-              <DownloadIcon />
-            </button>
-
+  <div class="fixed top-0 left-0 right-0 z-10">
+    <nav id="navbar" :class="'relative bg-gray-800 ' + (isMenuActive ? '' : 'shadow-xl')">
+      <div class="max-w-7xl mx-auto px-2 lg:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
             <button
               id="menu-button"
               type="button"
-              class="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              class="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
               aria-controls="mobile-menu"
               aria-expanded="false"
               @click="toggleMenu"
             >
               <span class="sr-only">Abrir Menu</span>
-              <MenuIcon />
+              <MenuIcon v-if="!isMenuActive" />
+              <CloseIcon v-else />
             </button>
           </div>
-        </div>
 
-        <div class="flex-1 flex items-center sm:items-stretch sm:justify-between">
-          <div class="flex-shrink-0 flex items-center">
-            <img class="h-8 w-auto" src="~/assets/img/logo-lg.svg" alt="Workflow" />
-          </div>
-          <div class="hidden sm:block">
-            <div class="flex space-x-4">
-              <a
-                v-for="(item, index) of sections"
-                :key="index"
-                v-smooth-scroll
-                :href="item.id"
-                :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
-                aria-current="page"
-                >{{ item.title }}</a
-              >
+          <div class="flex-1 flex items-center lg:items-stretch lg:justify-between">
+            <div class="flex-shrink-0 flex items-center">
+              <img class="h-8 w-auto" src="~/assets/img/logo-lg.svg" alt="Workflow" />
+            </div>
+            <div class="hidden lg:block">
+              <div class="flex space-x-4">
+                <a
+                  v-for="(item, index) of sections"
+                  :key="index"
+                  v-smooth-scroll
+                  :href="item.id"
+                  :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
+                  aria-current="page"
+                  >{{ item.title }}</a
+                >
+              </div>
+            </div>
+
+            <div class="flex space-x-2">
+              <a v-smooth-scroll class="navbar-button hidden lg:block" href="#contact"> Contactar</a>
+              <button class="navbar-button hidden lg:block" @click="downloadBrochure">Descargar Brochure</button>
             </div>
           </div>
-          <button class="navbar-button hidden sm:block" @click="downloadBrochure">Descargar Brochure</button>
         </div>
       </div>
-    </div>
 
-    <div id="mobile-menu" :class="'overflow-hidden sm:hidden ' + (!isMenuActive ? 'closed' : '')">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <a
-          v-for="(item, index) of sections"
-          :key="index"
-          v-smooth-scroll
-          :href="item.id"
-          :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
-          aria-current="page"
-          @click="isMenuActive = false"
-          >{{ item.title }}</a
-        >
+      <div id="mobile-menu" :class="'bg-gray-800 lg:hidden shadow-xl ' + (isMenuActive ? 'active' : '')">
+        <div class="px-2 pt-2 pb-3 space-y-2">
+          <a
+            v-for="(item, index) of sections"
+            :key="index"
+            v-smooth-scroll
+            :href="item.id"
+            :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
+            aria-current="page"
+            @click="isMenuActive = false"
+            >{{ item.title }}</a
+          >
+          <div class="flex flex-col space-y-2 mt-2">
+            <a v-smooth-scroll href="#contact" class="navbar-button">Contactar</a>
+            <a v-smooth-scroll class="navbar-button" aria-current="page" @click="downloadBrochure"
+              >Descargar Brochure</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
 <script>
 export default {
@@ -75,7 +77,7 @@ export default {
       { title: 'Garantías', id: '#guarantees' },
       { title: 'Beneficios', id: '#benefits' },
       { title: 'Clientes', id: '#customers' },
-      { title: 'Contacto', id: '#contact' },
+      // { title: 'Contacto', id: '#contact' },
     ]
     return {
       open: false,
@@ -84,6 +86,24 @@ export default {
       currentId: null,
       isMenuActive: false,
     }
+  },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+    document.addEventListener('click', (event) => {
+      console.log(event)
+      if (this.isMenuActive) {
+        const navbar = document.getElementById('navbar')
+        const menu = document.getElementById('mobile-menu')
+        const isClickOnNavbar = navbar.contains(event.target)
+        const isClickOnMenu = menu.contains(event.target)
+        if (!isClickOnNavbar && !isClickOnMenu) {
+          this.isMenuActive = false
+        }
+      }
+    })
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     handleScroll(event) {
@@ -103,7 +123,7 @@ export default {
       return id === this.currentId
     },
     toggleMenu() {
-      this.isMenuActive = !this.isMenuActive
+      setTimeout(() => (this.isMenuActive = !this.isMenuActive), 5)
     },
     downloadBrochure() {
       const a = document.createElement('a')
@@ -113,21 +133,19 @@ export default {
       a.click()
     },
   },
-
- 
 }
 </script>
 
 <style scoped>
 #mobile-menu {
-  transition: height 150ms ease-in-out, opacity 150ms ease-in;
-  height: 280px;
-  opacity: 1;
+  position: absolute;
+  top: -356px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 150ms ease-in-out;
 }
-
-.closed {
-  transition: opacity 150ms ease-out, height 150ms ease-in-out 150ms !important;
-  height: 0 !important;
-  opacity: 0 !important;
+.active {
+  transform: translateY(calc(356px + 64px));
 }
 </style>

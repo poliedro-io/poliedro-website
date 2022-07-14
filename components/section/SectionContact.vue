@@ -7,14 +7,12 @@
           Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu
           empresa.</BaseParagraph
         >
+      <ContactForm />
 
-        <BaseImage class="hidden md:block" name="contact.jpg" />
       </div>
 
-      <ContactForm />
+        <BaseImage class="hidden md:block" name="contact.jpg" />
     </div>
-
-    <h1>O hablemos por whatsapp</h1>
 
     <div class="mt-8 flex justify-center">
       <BaseButton v-smooth-scroll outlined href="#hero">
