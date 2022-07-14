@@ -1,13 +1,12 @@
 <template>
   <BaseSection :id="'customers'">
     <div class="lg:text-center">
-      <BaseHeader supertitle="partners digitales" title="Confían en nosotros" />
+      <BaseHeader supertitle="nuestros clientes" title="Súmate a la digitalización" />
     </div>
 
-    <!-- <BaseParagraph class="md:max-w-xl md:mx-auto md:text-center">
-      Acompañamos a nuestros clientes en la evolución tecnológica de todos sus procesos, avanzando de manera modular y
-      paso a paso.</BaseParagraph
-    > -->
+    <BaseParagraph class="md:max-w-xl md:mx-auto md:text-center">
+      DIversos rubros bla bla bla [un texto bakan igual]</BaseParagraph
+    >
 
     <div data-aos="fade-up" class="flex space-y-8 flex-wrap items-center justify-center">
       <a
