@@ -1,12 +1,22 @@
 <template>
-  <form name="contact-form" class="md:flex md:items-center" method="post" action="/form" data-netlify="true" netlify-honeypot="the-field">
+  <form
+    name="contact"
+    class="md:flex md:items-center"
+    method="post"
+    data-netlify="true"
+    netlify-honeypot="test-field"
+  >
+    <!-- action="/form" -->
+    
+    <input type="hidden" name="form-name" value="contact" />
+
     <div class="md:shadow-lg rounded-md">
       <div class="md:px-4 md:py-5 md:bg-white md:p-6">
         <div class="grid grid-cols-2 gap-4 md:gap-6">
           <div class="col-span-2 sm:col-span-1">
-            <p class="hidden">
-              <label> The field: <input name="the-field" /> </label>
-            </p>
+            <div class="hidden">
+              <label> Test field: <input name="test-field" /> </label>
+            </div>
             <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
             <input
               type="text"
@@ -17,7 +27,7 @@
             />
           </div>
 
-          <!-- <div class="col-span-2 sm:col-span-1">
+          <div class="col-span-2 sm:col-span-1">
             <label for="area" class="block text-sm font-medium text-gray-700">Rubro</label>
             <select
               name="area"
@@ -59,7 +69,7 @@
                 placeholder="Escribe tu mensaje"
               ></textarea>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
 
