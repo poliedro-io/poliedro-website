@@ -1,6 +1,6 @@
 <template>
   <div class="mb-8">
-    <h2 v-if="supertitle" class="text-base text-indigo-600 font-semibold tracking-wide uppercase">{{ supertitle }}</h2>
+    <h2 v-if="supertitle" class="text-base text-primary-600 font-semibold tracking-wide uppercase">{{ supertitle }}</h2>
     <p class="mt-2 text-4xl sm:text-5xl leading-10 font-semibold tracking-tight text-gray-900">
       {{ title }}
     </p>

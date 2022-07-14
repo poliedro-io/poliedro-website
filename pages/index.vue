@@ -8,8 +8,6 @@
 
     <SectionGuarantee />
 
-    <SectionSteps />
-
     <SectionBenefits />
 
     <SectionCustomers />

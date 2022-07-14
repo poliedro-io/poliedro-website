@@ -1,8 +1,9 @@
 export default {
+  target: 'static',
   head: {
-    title: 'NEFA',
+    title: 'Poliedro',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'es',
     },
     meta: [
       { charset: 'utf-8' },
@@ -21,7 +22,7 @@ export default {
   css: ['@/assets/css/main.css', 'aos/dist/aos.css'],
   plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],
   components: true,
-  buildModules: ['@nuxtjs/eslint-module', '@nuxt/postcss8', '@nuxt-hero-icons/outline/nuxt'],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxt/postcss8'],
   modules: [],
   build: {
     postcss: {

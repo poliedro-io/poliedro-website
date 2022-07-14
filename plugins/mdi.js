@@ -11,6 +11,8 @@ import SegmentIcon from 'vue-material-design-icons/Segment.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 import CheckIcon from 'vue-material-design-icons/Check.vue'
 import CheckDecagramOutlineIcon from 'vue-material-design-icons/CheckDecagramOutline.vue'
+import DownloadIcon from 'vue-material-design-icons/Download.vue'
+import MenuIcon from 'vue-material-design-icons/Menu.vue'
 
 const components = {
   ChevronDownIcon,
@@ -25,6 +27,8 @@ const components = {
   CheckIcon,
   SegmentIcon,
   CloseIcon,
+  DownloadIcon,
+  MenuIcon,
 }
 
 Object.entries(components).forEach(([name, component]) => {
