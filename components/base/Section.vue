@@ -1,5 +1,5 @@
 <template>
-  <section :id="id" v-bind="$attrs" :class="(noPadding ? 'py-0' : 'py-24') + ' bg-' + bgColor">
+  <section :id="id" :class="`bg-${bgColor} ${noPadding ? 'py-0' : 'py-24'}`">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <slot></slot>
     </div>
@@ -16,6 +16,5 @@ export default {
     bgColor: { type: String, default: 'white' },
     noPadding: Boolean,
   },
-  // props: ['id', 'bgColor', 'noPadding']
 }
 </script>

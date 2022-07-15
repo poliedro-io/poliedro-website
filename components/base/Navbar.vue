@@ -1,13 +1,19 @@
 <template>
   <div class="fixed top-0 left-0 right-0 z-10">
-    <nav id="navbar" :class="'relative bg-gray-800 ' + (isMenuActive ? '' : 'shadow-xl')">
+    <nav
+      id="navbar"
+      :class="`transition duration-150 relative bg-${isNavbarActive || isMenuActive ? 'gray-800 shadow-xl' : 'white'}`"
+    >
       <div class="max-w-7xl mx-auto px-2 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
             <button
               id="menu-button"
               type="button"
-              class="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+              v-bind:class="[
+                { 'text-gray-400 hover:bg-gray-700': isNavbarActive || isMenuActive },
+                'inline-flex items-center justify-center active:bg-none p-2 rounded-full hover:text-white focus:outline-none text-gray-800',
+              ]"
               aria-controls="mobile-menu"
               aria-expanded="false"
               @click="toggleMenu"
@@ -20,7 +26,11 @@
 
           <div class="flex-1 flex items-center lg:items-stretch lg:justify-between">
             <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
-              <img class="h-8 w-auto" src="~/assets/img/logo-lg.svg" alt="Workflow" />
+              <img
+                v-bind:class="[{'filter invert': !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
+                src="~/assets/img/logo-lg.svg"
+                alt="Workflow"
+              />
             </a>
             <div class="hidden lg:block">
               <div class="flex space-x-4">
@@ -29,7 +39,7 @@
                   :key="index"
                   v-smooth-scroll
                   :href="item.id"
-                  :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
+                  v-bind:class="[{selected: isSelected(item.id)}, {'alt': !isNavbarActive}, 'navbar-item']"
                   aria-current="page"
                   >{{ item.title }}</a
                 >
@@ -37,8 +47,8 @@
             </div>
 
             <div class="flex space-x-2">
-              <a v-smooth-scroll class="navbar-button hidden lg:block" href="#contact"> Contactar</a>
-              <button class="navbar-button hidden lg:block" @click="downloadBrochure">Descargar Brochure</button>
+              <a v-smooth-scroll v-bind:class="[{'alt': !isNavbarActive}, 'hidden lg:block navbar-button']" href="#contact"> Contactar</a>
+              <button v-bind:class="[{'alt': !isNavbarActive}, 'hidden lg:block navbar-button']" @click="downloadBrochure">Descargar Brochure</button>
             </div>
           </div>
         </div>
@@ -51,7 +61,7 @@
             :key="index"
             v-smooth-scroll
             :href="item.id"
-            :class="'navbar-item ' + (isSelected(item.id) ? 'selected' : '')"
+            v-bind:class="[{'selected':isSelected(item.id)}, 'navbar-item']"
             aria-current="page"
             @click="isMenuActive = false"
             >{{ item.title }}</a
@@ -85,6 +95,7 @@ export default {
       sections,
       currentId: null,
       isMenuActive: false,
+      isNavbarActive: false,
     }
   },
   beforeMount() {
@@ -108,6 +119,9 @@ export default {
     handleScroll(event) {
       this.isMenuActive = false
       const h = window.innerHeight
+      const y = window.scrollY
+      this.isNavbarActive = y > 128
+
       const current = this.sections.find(({ id }) => {
         const { top, bottom } = document.querySelector(id).getBoundingClientRect()
         return (top >= -h / 2 && top <= h / 2) || (bottom >= h / 2 && bottom <= h)
@@ -122,7 +136,9 @@ export default {
       return id === this.currentId
     },
     toggleMenu() {
-      setTimeout(() => (this.isMenuActive = !this.isMenuActive), 5)
+      setTimeout(() => {
+        this.isMenuActive = !this.isMenuActive
+      }, 5)
     },
     downloadBrochure() {
       const a = document.createElement('a')
@@ -138,6 +154,7 @@ export default {
 <style scoped>
 #mobile-menu {
   position: absolute;
+  opacity: 0;
   top: -356px;
   left: 0;
   right: 0;
@@ -146,5 +163,7 @@ export default {
 }
 .active {
   transform: translateY(calc(356px + 64px));
+  opacity: 1 !important;
 }
+
 </style>

@@ -48,8 +48,8 @@ module.exports = {
         800: '#ffb343',
         900: '#ffa632',
         light: '#fff8ec',
-          DEFAULT: '#ffc75f',
-          dark: '#ffa632',
+        DEFAULT: '#ffc75f',
+        dark: '#ffa632',
       }
     },
     // screens: {

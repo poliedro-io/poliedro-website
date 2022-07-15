@@ -4,12 +4,9 @@
 <script>
 export default {
   name: 'BaseImage',
-  props: ['name', 'maxWidth'],
-  metaInfo() {
-    return {
-      name: this.name,
-      maxWidth: this.maxWidth,
-    }
-  },
+  props: {
+    name: String,
+    maxWidth: String
+  }
 }
 </script>

@@ -15,12 +15,21 @@
 }
 
 
+
 .navbar-button {
   @apply text-center text-white bg-transparent border-2 border-primary-700  hover:bg-primary-700 px-3 py-2 rounded-md text-base font-medium transition-all;
 }
 
+.navbar-button.alt {
+  @apply text-gray-600 hover:text-white
+}
+
 .navbar-item {
   @apply text-center text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium;
+}
+
+.navbar-item.alt{
+  @apply text-gray-600 hover:text-white
 }
 
 .navbar-item.selected {

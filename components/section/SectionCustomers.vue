@@ -1,20 +1,20 @@
 <template>
   <BaseSection :id="'customers'">
     <div class="lg:text-center">
-      <BaseHeader supertitle="nuestros clientes" title="Súmate a la digitalización" />
+      <BaseHeader center supertitle="Súmate a la digitalización" title="Nuestros clientes confían en nosotros" />
     </div>
 
     <BaseParagraph class="md:max-w-xl md:mx-auto md:text-center">
       DIversos rubros bla bla bla [un texto bakan igual]</BaseParagraph
     >
 
-    <div data-aos="fade-up" class="flex space-y-8 flex-wrap items-center justify-center">
+    <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
       <a
         v-for="(item, index) of customers"
         :key="index"
         target="_blank"
         :href="item.url"
-        class="brand h-[100px] w-[120px] md:w-[160px] 2xl:w-[200px] flex items-center justify-center mx-4 md:mx-12"
+        class="brand h-[100px] w-[120px] md:w-[160px] 2xl:w-[200px] flex items-center justify-center my-4 mx-4 md:mx-12"
       >
         <img :src="require('~/assets/img/customers/' + item.name + '.webp')" :alt="item.name" />
       </a>

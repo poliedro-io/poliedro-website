@@ -1,9 +1,9 @@
 <template>
-  <BaseSection id="contact" bg-color="primary-50">
+  <BaseSection id="contact" bgColor="gray-800">
     <div class="md:grid md:grid-cols-2 md:gap-28">
       <div>
-        <BaseHeader supertitle="Contáctanos" title="Empecemos a trabajar juntos hoy mismo" />
-        <BaseParagraph>
+        <BaseHeader alt supertitle="Contáctanos" title="Empecemos a trabajar juntos hoy mismo" />
+        <BaseParagraph color="white">
           Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu
           empresa. [agregar un texto que de la confianza para escribir un mensaje y saber que responderán al toque]
           </BaseParagraph
