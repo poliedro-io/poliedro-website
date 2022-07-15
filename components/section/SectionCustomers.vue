@@ -5,8 +5,7 @@
     </div>
 
     <BaseParagraph class="md:max-w-xl md:mx-auto md:text-center">
-      DIversos rubros bla bla bla [un texto bakan igual]</BaseParagraph
-    >
+      Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que les brindamos a medida sus negocios crecen. [agregar algo más...]</BaseParagraph>
 
     <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
       <a

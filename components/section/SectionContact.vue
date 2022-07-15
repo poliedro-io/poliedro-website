@@ -1,18 +1,19 @@
 <template>
   <BaseSection id="contact" bgColor="gray-800">
     <div class="md:grid md:grid-cols-2 md:gap-28">
-      <div>
+      <div class="col-span-1">
         <BaseHeader alt supertitle="Contáctanos" title="Empecemos a trabajar juntos hoy mismo" />
         <BaseParagraph color="white">
-          Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu
-          empresa. [agregar un texto que de la confianza para escribir un mensaje y saber que responderán al toque]
-          </BaseParagraph
-        >
-      <ContactForm />
-
+          Desarrollamos soluciones digitales a la medida para automatizar y simplificar los procesos de tu empresa.
+          [agregar un texto que de la confianza para escribir un mensaje y saber que responderán al toque]
+        </BaseParagraph>
+        <br />
+        <ContactForm />
       </div>
 
+      <div class="col-span-1 flex items-center">
         <BaseImage class="hidden md:block" name="contact.jpg" />
+      </div>
     </div>
 
     <div class="mt-16 flex justify-center">

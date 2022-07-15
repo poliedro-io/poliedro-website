@@ -2,11 +2,7 @@
   <div class="mb-8">
     <h2 v-if="supertitle" class="text-base font-semibold tracking-wide uppercase text-primary-600" >{{ supertitle }}</h2>
     <p
-      :class="
-        'mt-2 text-4xl sm:text-5xl leading-10 font-semibold tracking-tight text-gray-900 ' +
-        (center ? 'mx-auto max-w-xl' : '')
-      " :style="(alt ? 'color: white' : '')"
-    >
+      v-bind:class="[{'mx-auto max-w-xl': center}, alt ? 'text-white': 'text-gray-800', 'mt-2 text-4xl sm:text-5xl  leading-tight font-semibold']">
       {{ title }}
     </p>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <p :class="'text-base mb-4 leading-7 text-' + color">
+  <p :class="'text-base mb-4 leading-7 text-' + color" v-bind="$attrs" >
     <slot></slot>
   </p>
 </template>
