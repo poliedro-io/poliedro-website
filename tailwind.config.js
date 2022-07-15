@@ -21,6 +21,7 @@ module.exports = {
       emerald: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.yellow,
+      cyan: colors.cyan,
       'primary': {
         50: '#e0f8f3',
         100: '#b3ede1',

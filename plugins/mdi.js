@@ -40,6 +40,6 @@ const components = {
   // FacebookIcon
 }
 
-Object.entries(components).forEach(([name, component]) => {
+Object.entries(components).forEach(([name, component]) => 
   Vue.component(name, component)
-})
+)
