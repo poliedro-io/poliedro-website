@@ -2,7 +2,7 @@
   <div class="w-full">
     <SectionHero />
 
-    <SectionSolutions />
+    <SectionSolutions :items="solutions" />
 
     <SectionFeatures />
 
@@ -13,12 +13,18 @@
     <SectionCustomers />
 
     <SectionContact />
-
   </div>
 </template>
 
 <script>
 export default {
   name: 'IndexPage',
+  async asyncData({ $content, params }) {
+    const solutions = await $content('solutions', params.slug)
+    .sortBy('id', 'asc').fetch()
+    return {
+      solutions,
+    }
+  },
 }
 </script>

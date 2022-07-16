@@ -12,7 +12,7 @@
             <div class="hidden">
               <label> Test field: <input name="test-field" /> </label>
             </div>
-            <label for="email" class="block text-sm font-medium text-gray-300 md:text-primary-600">Email*</label>
+            <label for="email" class="block text-sm font-medium text-gray-300 md:text-primary-600">Email</label>
             <input
               type="text"
               name="email"
@@ -24,7 +24,10 @@
           </div>
 
           <div class="col-span-2 sm:col-span-1">
+            <div class="flex justify-between">
             <label for="nombre" class="block text-sm font-medium text-gray-300 md:text-primary-600">Teléfono</label>
+            <span class="opacity-40 text-sm">Opcional</span>
+            </div>
             <input
               type="text"
               name="telefono"
@@ -35,7 +38,7 @@
           </div>
 
           <div class="col-span-2">
-            <label for="mensaje" class="block text-sm font-medium text-gray-300 md:text-primary-600">Mensaje*</label>
+            <label for="mensaje" class="block text-sm font-medium text-gray-300 md:text-primary-600">Mensaje</label>
             <div class="mt-1">
               <textarea
                 name="mensaje"

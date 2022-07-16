@@ -13,10 +13,20 @@ import CheckIcon from 'vue-material-design-icons/Check.vue'
 import CheckDecagramOutlineIcon from 'vue-material-design-icons/CheckDecagramOutline.vue'
 import DownloadIcon from 'vue-material-design-icons/Download.vue'
 import MenuIcon from 'vue-material-design-icons/Menu.vue'
-// import InstagramIcon from 'vue-material-design-icons/Instagram.vue'
-// import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
-// import PhoneIcon from 'vue-material-design-icons/Phone.vue'
-// import EmailIcon from 'vue-material-design-icons/Email.vue'
+
+import InstagramIcon from 'vue-material-design-icons/Instagram.vue'
+import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
+import PhoneIcon from 'vue-material-design-icons/Phone.vue'
+import EmailIcon from 'vue-material-design-icons/Email.vue'
+
+import CartOutlineIcon from 'vue-material-design-icons/CartOutline.vue'
+import MapOutlineIcon from 'vue-material-design-icons/MapOutline.vue'
+import FormatListChecksIcon from 'vue-material-design-icons/FormatListChecks.vue'
+import CalendarOutlineIcon from 'vue-material-design-icons/CalendarOutline.vue'
+import FinanceIcon from 'vue-material-design-icons/Finance.vue'
+import ToolsIcon from 'vue-material-design-icons/Tools.vue'
+import ViewDashboardOutlineIcon from 'vue-material-design-icons/ViewDashboardOutline.vue'
+import ChartGanttIcon from 'vue-material-design-icons/ChartGantt.vue'
 
 const components = {
   ChevronDownIcon,
@@ -33,13 +43,22 @@ const components = {
   CloseIcon,
   DownloadIcon,
   MenuIcon,
+
+  CartOutlineIcon,
+  MapOutlineIcon,
+  FormatListChecksIcon,
+  CalendarOutlineIcon,
+  FinanceIcon,
+  ToolsIcon,
+  ViewDashboardOutlineIcon,
+  ChartGanttIcon,
   
-  // InstagramIcon,
-  // EmailIcon,
-  // PhoneIcon,
-  // FacebookIcon
+  InstagramIcon,
+  EmailIcon,
+  PhoneIcon,
+  FacebookIcon
 }
 
-Object.entries(components).forEach(([name, component]) => 
+Object.entries(components).forEach(([name, component]) =>
   Vue.component(name, component)
 )

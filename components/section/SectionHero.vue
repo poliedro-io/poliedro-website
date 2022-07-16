@@ -8,7 +8,7 @@
         :src="require('~/assets/img/hero-image.webp')"
       />
       <div>
-        <span data-aos="fade-right" data-aos-once="true" class="text-base text-primary-600 font-semibold uppercase tracking-wide"
+        <span data-aos="fade-right" data-aos-once="true" class="text-base text-primary font-semibold uppercase tracking-wide"
           >Digitalízate</span
         >
         <h1
