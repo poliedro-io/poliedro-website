@@ -179,7 +179,7 @@ export default {
   transform: translateY(calc(356px + 64px));
   opacity: 1 !important;
 }
-.inver{
+.invert{
   filter: invert(1);
 }
 </style>
