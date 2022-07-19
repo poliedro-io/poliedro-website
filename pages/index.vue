@@ -4,11 +4,11 @@
 
     <SectionSolutions :items="solutions" />
 
-    <SectionFeatures />
+    <SectionFeatures  :items="features"/>
 
     <SectionGuarantee />
 
-    <SectionBenefits />
+    <SectionBenefits :items="benefits"/>
 
     <SectionCustomers />
 
@@ -21,9 +21,15 @@ export default {
   name: 'IndexPage',
   async asyncData({ $content, params }) {
     const solutions = await $content('solutions', params.slug)
-    .sortBy('id', 'asc').fetch()
+    .sortBy('id', 'asc').fetch();
+    const features = await $content('features', params.slug)
+    .sortBy('id', 'asc').fetch();
+    const benefits = await $content('benefits', params.slug)
+    .sortBy('id', 'asc').fetch();
     return {
       solutions,
+      features,
+      benefits
     }
   },
 }

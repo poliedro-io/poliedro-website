@@ -27,7 +27,7 @@
           <div class="flex-1 flex items-center lg:items-stretch lg:justify-between">
             <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
               <img
-                v-bind:class="[{'filter invert': !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
+                :class="[{'filter invert': !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
                 src="~/assets/img/logo-lg.svg"
                 alt="Workflow"
               />
@@ -167,3 +167,39 @@ export default {
 }
 
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

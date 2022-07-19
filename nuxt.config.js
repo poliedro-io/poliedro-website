@@ -37,7 +37,4 @@ export default {
       },
     },
   },
-  /**
-  buildDir: 'nuxt-dist',
-   */
 }

@@ -1,33 +1,29 @@
 <template>
-  <BaseSection :id="'guarantees'">
+  <BaseSection id="guarantees" bg-color="gray-800">
     <div class="grid md:grid-cols-2 gap-8">
       <div class="md:order-last">
-        <BaseHeader supertitle="Lo que garantizamos" title="Queremos ser tu Partner digital" />
+        <BaseHeader supertitle="Lo que garantizamos" title="Queremos ser tu Partner digital" color="green" alt />
 
-        <BaseParagraph>
+        <BaseParagraph color="gray-200">
           Nuestra intención es acompañar de forma permanente el crecimiento de tu empresa, ayudándote a digitalizar
           todos sus procesos implementando tecnologías de vanguardia que te permitirán generar y mantener una ventaja
           frente a la competencia. Es por eso que te garantizamos:
         </BaseParagraph>
 
         <ul class="space-y-6 my-8">
-          <li class="group" v-for="(item, index) of guarantees" :key="index">
+          <li v-for="(item, index) of guarantees" :key="index">
             <div class="flex items-center justify-between max-w-lg">
               <div class="flex items-center">
-                <CheckDecagramOutlineIcon :size="28" class="text-primary" />
-                <span class="ml-4 text-gray-600">{{ item }}</span>
+                <CheckDecagramOutlineIcon :size="28" class="text-green" />
+                <span class="ml-4 text-gray-200">{{ item }}</span>
               </div>
-              <a v-smooth-scroll href="#contact" class="hidden text-primary items-center md:group-hover:flex">
-                <span>Saber más </span>
-                <ArrowRightIcon :size="16" />
-              </a>
             </div>
           </li>
         </ul>
 
-        <a v-smooth-scroll href="#contact" class="flex justify-end text-primary items-center md:hidden">
-          <span>Saber más &nbsp;</span>
-          <ArrowRightIcon :size="16" />
+        <a v-smooth-scroll href="#contact" class="flex justify-end text-green hover:underline items-center">
+          <span>Saber más</span>
+          <ArrowRightIcon class="ml-2" :size="16" />
         </a>
       </div>
 

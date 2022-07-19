@@ -1,41 +1,43 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  // tailwindcss: {
+  //   exposeConfig: true
+  // },
+  mode: 'jit',
   content: [
-    './components/**/*.{js,vue,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
+  safelist: [
+    'bg-blue',
+    'bg-green',
+    'bg-yellow',
+    'bg-violet',
+    'text-blue',
+    'text-green',
+    'text-yellow',
+    'text-violet',
+    'shadow-blue-500/50',
+    'shadow-green-500/50',
+    'shadow-yellow-500/50',
+    'shadow-violet-500/50',
+    'filter invert'
   ],
   theme: {
+
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
     },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: colors.black,
       white: colors.white,
       gray: colors.gray,
-      emerald: colors.emerald,
-      indigo: colors.indigo,
-      yellow: colors.yellow,
-      cyan: colors.cyan,
-      'primary': {
-        // 50: '#e0fbf6',
-        // 100: '#b3f6e7',
-        // 200: '#80f0d8',
-        // 300: '#4de9c8',
-        // 400: '#26e5bc',
-        // 500: '#00e0b0',
-        // 600: '#00dca9',
-        // 700: '#00d8a0',
-        // 800: '#00d397',
-        // 900: '#00cb87',
-        // light: '#e0fbf6',
-        // DEFAULT: '#00e0b0',
-        // dark: '#00cb87',
+      'blue': {
         50: '#e0f8fa',
         100: '#b3eef4',
         200: '#80e3ec',
@@ -50,35 +52,53 @@ module.exports = {
         DEFAULT: '#00c7d9',
         dark: '#00a6c0',
       },
-      'secondary': {
-        // 50: '#f7ffe0',
-        // 100: '#ebffb3',
-        // 200: '#ddff80',
-        // 300: '#cfff4d',
-        // 400: '#c5ff26',
-        // 500: '#bbff00',
-        // 600: '#b5ff00',
-        // 700: '#acff00',
-        // 800: '#a4ff00',
-        // 900: '#96ff00',
-        // light: '#f7ffe0',
-        // DEFAULT: '#bbff00',
-        // dark: '#96ff00',
-        50: '#fffae0',
-        100: '#fff4b3',
-        200: '#ffec80',
-        300: '#ffe44d',
-        400: '#ffdf26',
-        500: '#ffd900',
-        600: '#ffd500',
-        700: '#ffcf00',
-        800: '#ffca00',
-        900: '#ffc000',
-        light: '#fffae0',
-        DEFAULT: '#ffd900',
-        dark: '#ffc000',
+      'green': {
+        50: '#f0fae0',
+        100: '#d9f2b3',
+        200: '#bfea80',
+        300: '#a5e14d',
+        400: '#92da26',
+        500: '#7fd400',
+        600: '#77cf00',
+        700: '#6cc900',
+        800: '#62c300',
+        900: '#4fb900',
+        light: '#d9f2b3',
+        DEFAULT: '#7fd400',
+        dark: '4fb900'
+      },
+      'yellow': {
+        50: '#fff5e0',
+        100: '#ffe6b3',
+        200: '#ffd580',
+        300: '#ffc44d',
+        400: '#ffb726',
+        500: '#ffaa00',
+        600: '#ffa300',
+        700: '#ff9900',
+        800: '#ff9000',
+        900: '#ff7f00',
+        light: '#ffe6b3',
+        DEFAULT: '#ffaa00',
+        dark: 'ff7f00'
+      },
+      'violet': {
+        50: '#ffe9f4',
+        100: '#ffc8e3',
+        200: '#ffa3d0',
+        300: '#ff7ebd',
+        400: '#ff63ae',
+        500: '#ff47a0',
+        600: '#ff4098',
+        700: '#ff378e',
+        800: '#ff2f84',
+        900: '#ff2073',
+        light: '#ffe9f4',
+        DEFAULT: '#ff47a0',
+        dark: 'ff2073'
       }
     },
+ 
 
     // screens: {
     //   sm: '480px',
@@ -86,15 +106,8 @@ module.exports = {
     //   lg: '976px',
     //   xl: '1440px',
     // },
-    // extend: {
-    //   spacing: {
-    //     '128': '32rem',
-    //     '144': '36rem',
-    //   },
-    //   borderRadius: {
-    //     '4xl': '2rem',
-    //   }
-    // }
+
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
+  plugins: [require('@tailwindcss/forms'),
+  require('@tailwindcss/aspect-ratio')],
 }

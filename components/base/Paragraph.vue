@@ -1,5 +1,5 @@
 <template>
-  <p :class="'text-base mb-4 leading-7 text-' + color" v-bind="$attrs" >
+  <p v-bind:class="['text-base mb-4 leading-7', 'text-' + color, {'text-justify': justify}]" v-bind="$attrs">
     <slot></slot>
   </p>
 </template>
@@ -10,7 +10,8 @@ export default {
     color: {
       default: 'gray-600',
       type: String
-    }
+    },
+    justify: Boolean
   }
 }
 </script>

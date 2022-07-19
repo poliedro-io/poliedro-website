@@ -8,7 +8,10 @@
         :src="require('~/assets/img/hero-image.webp')"
       />
       <div>
-        <span data-aos="fade-right" data-aos-once="true" class="text-base text-primary font-semibold uppercase tracking-wide"
+        <span
+          data-aos="fade-right"
+          data-aos-once="true"
+          class="text-base text-blue font-semibold uppercase tracking-wide"
           >Digitalízate</span
         >
         <h1
@@ -17,19 +20,16 @@
           data-aos-delay="100"
           class="text-gray-800 text-4xl sm:text-5xl xl:text-6xl font-bold"
         >
-        Desarrollamos <br> <span class="text-primary">la solución</span> que necesitas.
+          Desarrollamos <br />
+          <span class="text-blue">la solución</span> que necesitas.
         </h1>
         <p data-aos="fade-right" data-aos-once="true" data-aos-delay="200" class="mt-4 text-gray-600 text-xl">
-         Cada empresa es única. Por eso digitalizamos a la medida de las <b class="font-bold">necesidades únicas</b> de tu empresa.
+          Cada empresa es única. Por eso digitalizamos a la medida de las <b class="font-bold">necesidades únicas</b> de
+          tu empresa.
         </p>
-        <div
-          data-aos="fade-right"
-          data-aos-once="true"
-          data-aos-delay="300"
-          class="max-w-md flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6"
-        >
-          <BaseButton v-smooth-scroll href="#contact" outlined class="flex-1"> Contactar </BaseButton>
-          <BaseButton @click="downloadBrochure" outlined class="flex-1"> Descargar Brochure </BaseButton>
+
+        <div data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
+          <button v-smooth-scroll href="#contact" outlined class="w-40 btn blue mt-4">Contactar</button>
         </div>
       </div>
     </div>

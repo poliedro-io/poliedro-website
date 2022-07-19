@@ -27,6 +27,17 @@ import FinanceIcon from 'vue-material-design-icons/Finance.vue'
 import ToolsIcon from 'vue-material-design-icons/Tools.vue'
 import ViewDashboardOutlineIcon from 'vue-material-design-icons/ViewDashboardOutline.vue'
 import ChartGanttIcon from 'vue-material-design-icons/ChartGantt.vue'
+import PuzzleOutlineIcon from 'vue-material-design-icons/PuzzleOutline.vue'
+import ResponsiveIcon from 'vue-material-design-icons/Responsive.vue'
+import CloudLockOutlineIcon from 'vue-material-design-icons/CloudLockOutline.vue'
+import ClockCheckOutlineIcon from 'vue-material-design-icons/ClockCheckOutline.vue'
+import AccountKeyOutlineIcon from 'vue-material-design-icons/AccountKeyOutline.vue'
+import FileDownloadOutlineIcon from 'vue-material-design-icons/FileDownloadOutline.vue'
+import TrendingUpIcon from 'vue-material-design-icons/TrendingUp.vue'
+import SpeedometerIcon from 'vue-material-design-icons/Speedometer.vue'
+import CurrencyUsdIcon from 'vue-material-design-icons/CurrencyUsd.vue'
+import AccountAlertOutlineIcon from 'vue-material-design-icons/AccountAlertOutline.vue'
+import GoogleCirclesExtendedIcon from 'vue-material-design-icons/GoogleCirclesExtended.vue'
 
 const components = {
   ChevronDownIcon,
@@ -52,6 +63,19 @@ const components = {
   ToolsIcon,
   ViewDashboardOutlineIcon,
   ChartGanttIcon,
+
+  PuzzleOutlineIcon,
+  ResponsiveIcon,
+  CloudLockOutlineIcon,
+  ClockCheckOutlineIcon,
+  AccountKeyOutlineIcon,
+  FileDownloadOutlineIcon,
+
+  TrendingUpIcon,
+  SpeedometerIcon,
+  CurrencyUsdIcon,
+  AccountAlertOutlineIcon,
+  GoogleCirclesExtendedIcon,
   
   InstagramIcon,
   EmailIcon,
