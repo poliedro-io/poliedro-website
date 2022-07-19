@@ -2,7 +2,10 @@
   <div class="fixed top-0 left-0 right-0 z-10">
     <nav
       id="navbar"
-      :class="`transition duration-150 relative bg-${isNavbarActive || isMenuActive ? 'gray-800 shadow-xl' : 'white'}`"
+      :class="[
+        'transition duration-150 relative',
+        isNavbarActive || isMenuActive ? 'bg-gray-800 shadow-xl' : 'bg-white',
+      ]"
     >
       <div class="max-w-7xl mx-auto px-2 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
@@ -10,9 +13,9 @@
             <button
               id="menu-button"
               type="button"
-              v-bind:class="[
-                { 'text-gray-400 hover:bg-gray-700': isNavbarActive || isMenuActive },
-                'inline-flex items-center justify-center active:bg-none p-2 rounded-full hover:text-white focus:outline-none text-gray-800',
+              :class="[
+                isNavbarActive || isMenuActive ? 'text-gray-400 hover:bg-gray-700' : 'text-gray-800 hover:text-white',
+                'inline-flex items-center justify-center active:bg-none p-2 rounded-full  focus:outline-none',
               ]"
               aria-controls="mobile-menu"
               aria-expanded="false"
@@ -27,7 +30,7 @@
           <div class="flex-1 flex items-center lg:items-stretch lg:justify-between">
             <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
               <img
-                :class="[{'filter invert': !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
+                :class="[{ 'invert': !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
                 src="~/assets/img/logo-lg.svg"
                 alt="Workflow"
               />
@@ -39,7 +42,7 @@
                   :key="index"
                   v-smooth-scroll
                   :href="item.id"
-                  v-bind:class="[{selected: isSelected(item.id)}, {'alt': !isNavbarActive}, 'navbar-item']"
+                  v-bind:class="[{ selected: isSelected(item.id) }, { alt: !isNavbarActive }, 'navbar-item']"
                   aria-current="page"
                   >{{ item.title }}</a
                 >
@@ -47,27 +50,38 @@
             </div>
 
             <div class="flex space-x-2">
-              <a v-smooth-scroll v-bind:class="[{'alt': !isNavbarActive}, 'hidden lg:block navbar-button']" href="#contact"> Contactar</a>
-              <button v-bind:class="[{'alt': !isNavbarActive}, 'hidden lg:block navbar-button']" @click="downloadBrochure">Descargar Brochure</button>
+              <a
+                v-smooth-scroll
+                v-bind:class="[{ alt: !isNavbarActive }, 'hidden lg:block navbar-button']"
+                href="#contact"
+              >
+                Contactar</a
+              >
+              <button
+                v-bind:class="[{ alt: !isNavbarActive }, 'hidden lg:block navbar-button']"
+                @click="downloadBrochure"
+              >
+                Descargar Brochure
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="mobile-menu" :class="'bg-gray-800 lg:hidden shadow-xl ' + (isMenuActive ? 'active' : '')">
+      <div id="mobile-menu" :class="['bg-gray-800 lg:hidden shadow-xl', isMenuActive ? 'active' : '']">
         <div class="px-2 pt-2 pb-3 space-y-2">
           <a
             v-for="(item, index) of sections"
             :key="index"
             v-smooth-scroll
             :href="item.id"
-            v-bind:class="[{'selected':isSelected(item.id)}, 'navbar-item']"
+            v-bind:class="[{ selected: isSelected(item.id) }, 'navbar-item']"
             aria-current="page"
             @click="isMenuActive = false"
             >{{ item.title }}</a
           >
           <div class="flex flex-col space-y-2 mt-2">
-            <a href="https://wa.me/56964033243" class="navbar-button">Contactar</a>
+            <a href="https://wa.me/56964033243" class="navbar-button">Enviar whatsapp</a>
             <a v-smooth-scroll class="navbar-button" aria-current="page" @click="downloadBrochure"
               >Descargar Brochure</a
             >
@@ -87,7 +101,7 @@ export default {
       { title: 'Garantías', id: '#guarantees' },
       { title: 'Beneficios', id: '#benefits' },
       { title: 'Clientes', id: '#customers' },
-      // { title: 'Contacto', id: '#contact' },
+      { title: 'Contacto', id: '#contact' },
     ]
     return {
       open: false,
@@ -165,41 +179,7 @@ export default {
   transform: translateY(calc(356px + 64px));
   opacity: 1 !important;
 }
-
+.inver{
+  filter: invert(1);
+}
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -25,7 +25,8 @@ module.exports = {
     'shadow-green-500/50',
     'shadow-yellow-500/50',
     'shadow-violet-500/50',
-    'filter invert'
+    'filter',
+    'invert'
   ],
   theme: {
 

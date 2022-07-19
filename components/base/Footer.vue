@@ -5,7 +5,7 @@
         <a class="pl-4 py-6" v-smooth-scroll href="#hero">
           <img
             :src="require('~/assets/img/logo-lg.svg')"
-            class="filter invert opacity-70 hover:opacity-100 h-16"
+            class="invert opacity-70 hover:opacity-100 h-16"
             alt="Logo Poliedro"
           />
         </a>
@@ -88,3 +88,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.invert {
+  filter: invert(1);
+}
+</style>
