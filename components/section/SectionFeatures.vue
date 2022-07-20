@@ -2,14 +2,18 @@
   <BaseSection id="features" bg-color="blue-50">
     <div class="lg:grid lg:grid-cols-2 lg:gap-28">
       <div>
-        <BaseHeader color="violet" supertitle="ofrecemos calidad" title="Desarrollamos aplicaciones modernas" />
+        <BaseHeader color="violet" supertitle="soluciones modernas" title="Integramos las últimas tecnologías web." />
 
-        <BaseParagraph>
+        <p class="section-paragraph">
           En Poliedro nos apasiona la tecnología, y procuramos estar siempre al día con las últimas herramientas
           digitales. De esta forma nos aseguramos de entregar siempre soluciones potentes, eficientes e intuitivas.
-        </BaseParagraph>
+        </p>
 
-        <div class="my-8">
+        <p class="section-paragraph">
+          Las plataformas que desarrollamos constan de aplicaciones web con acceso diferenciado por roles, totalmente integradas entre sí con bases de datos en tiempo real en la nube y adaptadas a todos los dispositivos.  
+        </p>
+
+        <div class="hidden lg:block my-8">
           <BaseImage :name="'features.webp'" />
         </div>
       </div>

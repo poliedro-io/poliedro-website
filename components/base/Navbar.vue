@@ -9,7 +9,7 @@
     >
       <div class="max-w-7xl mx-auto px-2 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
-          <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
+          <div class="absolute inset-y-0 right-0 flex items-center xl:hidden">
             <button
               id="menu-button"
               type="button"
@@ -27,7 +27,7 @@
             </button>
           </div>
 
-          <div class="flex-1 flex items-center lg:items-stretch lg:justify-between">
+          <div class="flex-1 flex items-center lg:justify-between">
             <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
               <img
                 :class="[{ 'invert': !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
@@ -35,8 +35,8 @@
                 alt="Workflow"
               />
             </a>
-            <div class="hidden lg:block">
-              <div class="flex space-x-4">
+            <div class="hidden xl:block">
+              <div class="flex align-center space-x-4">
                 <a
                   v-for="(item, index) of sections"
                   :key="index"
@@ -49,16 +49,15 @@
               </div>
             </div>
 
-            <div class="flex space-x-2">
+            <div class="space-x-2 hidden xl:flex">
               <a
-                v-smooth-scroll
-                v-bind:class="[{ alt: !isNavbarActive }, 'hidden lg:block navbar-button']"
-                href="#contact"
+                v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']"
+                href="https://wa.me/56964033243"
               >
-                Contactar</a
+                Enviar Whatsapp</a
               >
               <button
-                v-bind:class="[{ alt: !isNavbarActive }, 'hidden lg:block navbar-button']"
+                v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']"
                 @click="downloadBrochure"
               >
                 Descargar Brochure
@@ -68,7 +67,7 @@
         </div>
       </div>
 
-      <div id="mobile-menu" :class="['bg-gray-800 lg:hidden shadow-xl', isMenuActive ? 'active' : '']">
+      <div id="mobile-menu" :class="['bg-gray-800 xl:hidden shadow-xl', isMenuActive ? 'active' : '']">
         <div class="px-2 pt-2 pb-3 space-y-2">
           <a
             v-for="(item, index) of sections"

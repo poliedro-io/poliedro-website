@@ -1,12 +1,12 @@
 <template>
   <div class="cursor-default">
     <dt>
-      <div :class="[bgColor, shadow,  'transition-all flex items-center justify-center h-12 w-12 rounded-md p-4 text-white bg-lue']">
-        <component :is="icon" />
+      <div :class="[bgColor, shadow,  'transition-all flex items-center justify-center h-14 w-14 rounded-md p-4 text-white bg-lue']">
+        <component :is="icon" :size="28" />
       </div>
-      <p class="mt-4 text-base font-medium text-gray-800">{{ title }}</p>
+      <p class="mt-4 text-base font-medium text-gray-700">{{ title }}</p>
     </dt>
-    <dd class="mt text-sm text-gray-500">
+    <dd class="mt-2 text-sm text-gray-500">
       {{ description }}
     </dd>
   </div>

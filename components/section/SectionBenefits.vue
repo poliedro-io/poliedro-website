@@ -4,10 +4,10 @@
       <div>
         <BaseHeader title="Beneficios de la digitalización" supertitle="para considerar" color="yellow" />
 
-        <BaseParagraph>
+        <p class="section-paragraph">
           Hoy en día las tecnologías nos permiten facilitar la forma en que trabajamos. A medida que estas tecnologías
           se hacen mas acequibles van transformando todos los ámbitos de la sociedad.
-        </BaseParagraph>
+        </p>
 
         <dl class="my-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-16">
           <BaseItem

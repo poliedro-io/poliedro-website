@@ -1,6 +1,6 @@
 <template>
-  <section :id="id" v-bind:class="['bg-' + bgColor,  noPadding ? 'py-0' : 'py-24']">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+  <section :id="id" :class="['bg-' + bgColor,  noPaddingY ? 'py-0' : 'py-24']">
+    <div :class="['max-w-7xl mx-auto', noPaddingX ? 'px-0' : 'px-4 sm:px-6 lg:px-8']">
       <slot></slot>
     </div>
   </section>
@@ -14,7 +14,8 @@ export default {
       default: '',
     },
     bgColor: { type: String, default: 'white' },
-    noPadding: Boolean,
+    noPaddingY: Boolean,
+    noPaddingX: Boolean,
   },
 }
 </script>

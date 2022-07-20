@@ -38,6 +38,8 @@ import SpeedometerIcon from 'vue-material-design-icons/Speedometer.vue'
 import CurrencyUsdIcon from 'vue-material-design-icons/CurrencyUsd.vue'
 import AccountAlertOutlineIcon from 'vue-material-design-icons/AccountAlertOutline.vue'
 import GoogleCirclesExtendedIcon from 'vue-material-design-icons/GoogleCirclesExtended.vue'
+import CellphoneIcon from 'vue-material-design-icons/Cellphone.vue'
+import LightningBoltOutlineIcon from 'vue-material-design-icons/LightningBoltOutline.vue'
 
 const components = {
   ChevronDownIcon,
@@ -76,6 +78,8 @@ const components = {
   CurrencyUsdIcon,
   AccountAlertOutlineIcon,
   GoogleCirclesExtendedIcon,
+  CellphoneIcon,
+  LightningBoltOutlineIcon,
   
   InstagramIcon,
   EmailIcon,

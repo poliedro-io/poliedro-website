@@ -2,13 +2,13 @@
   <BaseSection id="guarantees" bg-color="gray-800">
     <div class="grid md:grid-cols-2 gap-8">
       <div class="md:order-last">
-        <BaseHeader supertitle="Lo que garantizamos" title="Queremos ser tu Partner digital" color="green" alt />
+        <BaseHeader supertitle="tu partner digital" title="Queremos digitalizar todos tus procesos" color="green" alt />
 
-        <BaseParagraph color="gray-200">
+        <p class="section-paragraph white">
           Nuestra intención es acompañar de forma permanente el crecimiento de tu empresa, ayudándote a digitalizar
           todos sus procesos implementando tecnologías de vanguardia que te permitirán generar y mantener una ventaja
           frente a la competencia. Es por eso que te garantizamos:
-        </BaseParagraph>
+        </p>
 
         <ul class="space-y-6 my-8">
           <li v-for="(item, index) of guarantees" :key="index">
@@ -50,3 +50,4 @@ export default {
   },
 }
 </script>
+

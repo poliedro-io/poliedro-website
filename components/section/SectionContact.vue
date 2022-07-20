@@ -6,10 +6,10 @@
       </div>
       <div class="col-span-1">
         <BaseHeader alt supertitle="Contáctanos" title="Respondemos al instante." />
-        <BaseParagraph color="gray-200">
+        <p class="section-paragraph">
           No dudes en contactarnos si quieres conocer algunos de nuestros proyectos, nuestra forma de trabajo, las tecnologías que usamos o concertar una reunión para contarnos tu problema. <br>
           <a class="text-blue hover:underline" href="https://wa.me/56964033243">Hablemos por Whatsapp</a>, o envíanos un mensaje desde el siguiente formulario:
-        </BaseParagraph>
+        </p>
         <br />
         <ContactForm />
       </div>

@@ -4,8 +4,10 @@
       <BaseHeader center supertitle="Súmate a la digitalización" title="Nuestros clientes confían en nosotros" />
     </div>
 
-    <BaseParagraph class="md:max-w-xl md:mx-auto md:text-center">
-      Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que les brindamos a medida sus negocios crecen. [agregar algo más...]</BaseParagraph>
+    <p class="section-paragraph">
+      Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que les brindamos a
+      medida sus negocios crecen. [agregar algo más...]
+    </p>
 
     <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
       <a
