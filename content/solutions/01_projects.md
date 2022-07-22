@@ -1,8 +1,9 @@
 ---
 id: 1
 icon: chart-gantt-icon
+image: projects.webp
 title: Proyectos 
-description: Genera presupuestos, crea proyectos a partir de ellos y gestiónalos hasta su finalización.
+description: Potencia la gestión de tus proyectos mediante la generación de presupuestos, cartas Gantt, asignación de tareas y programación de hitos.
 ---
 
 

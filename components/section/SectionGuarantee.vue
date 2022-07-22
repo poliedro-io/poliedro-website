@@ -2,7 +2,7 @@
   <BaseSection id="guarantees" bg-color="gray-800">
     <div class="grid md:grid-cols-2 gap-8">
       <div class="md:order-last">
-        <BaseHeader supertitle="tu partner digital" title="Queremos digitalizar todos tus procesos" color="green" alt />
+        <BaseHeader supertitle="tu partner digital" title="Queremos digitalizar todos tus procesos" color="yellow" alt />
 
         <p class="section-paragraph white">
           Nuestra intención es acompañar de forma permanente el crecimiento de tu empresa, ayudándote a digitalizar
@@ -14,17 +14,19 @@
           <li v-for="(item, index) of guarantees" :key="index">
             <div class="flex items-center justify-between max-w-lg">
               <div class="flex items-center">
-                <CheckDecagramOutlineIcon :size="28" class="text-green" />
+                <CheckDecagramOutlineIcon :size="28" class="text-yellow" />
                 <span class="ml-4 text-gray-200">{{ item }}</span>
               </div>
             </div>
           </li>
         </ul>
 
-        <a v-smooth-scroll href="#contact" class="flex justify-end text-green hover:underline items-center">
+    <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Saber más</button>
+
+        <!-- <a v-smooth-scroll href="#contact" class="flex justify-end text-green hover:underline items-center">
           <span>Saber más</span>
           <ArrowRightIcon class="ml-2" :size="16" />
-        </a>
+        </a> -->
       </div>
 
       <BaseImage :name="'advanced-trading-tools.webp'" />

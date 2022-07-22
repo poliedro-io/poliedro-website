@@ -14,7 +14,7 @@
               id="menu-button"
               type="button"
               :class="[
-                isNavbarActive || isMenuActive ? 'text-gray-400 hover:bg-gray-700' : 'text-gray-800 hover:text-white',
+                isNavbarActive || isMenuActive ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-800 hover:text-white',
                 'inline-flex items-center justify-center active:bg-none p-2 rounded-full  focus:outline-none',
               ]"
               aria-controls="mobile-menu"

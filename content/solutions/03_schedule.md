@@ -1,6 +1,7 @@
 ---
 id: 3
 icon: calendar-outline-icon
-title: Agenda
-description: Integra calendarios para registrar eventos, agendar atenciones y programar la actividad de tu empresa.
+image: calendar.png
+title: Agendamientos
+description: Automatiza los agendamientos de tus servicios y revisa las actividades programadas del mes mediante calendarios dinámicos.
 ---

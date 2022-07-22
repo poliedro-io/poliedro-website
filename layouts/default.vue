@@ -6,6 +6,7 @@
       ></div> -->
       <BaseNavbar />
 
+      <WhatsappButton />
       <main class="text-neutral-800">
         <Nuxt />
       </main>

@@ -10,7 +10,8 @@
         </p>
 
         <p class="section-paragraph">
-          Las plataformas que desarrollamos constan de aplicaciones web con acceso diferenciado por roles, totalmente integradas entre sí con bases de datos en tiempo real en la nube y adaptadas a todos los dispositivos.  
+          Las plataformas que desarrollamos constan de aplicaciones web con acceso diferenciado por roles, totalmente
+          integradas entre sí con bases de datos en tiempo real en la nube y adaptadas a todos los dispositivos.
         </p>
 
         <div class="hidden lg:block my-8">
@@ -26,7 +27,7 @@
             :title="item.title"
             :description="item.description"
             :icon="item.icon"
-            :index="index"
+            color="violet"
           />
         </dl>
       </div>

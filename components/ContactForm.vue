@@ -53,7 +53,7 @@
       </div>
 
       <div class="py-6 md:p-4 md:bg-gray-100 text-right rounded-b-md">
-        <button type="submit" class="btn blue w-full md:w-40">Enviar</button>
+        <button type="submit" class="btn green w-full md:w-40">Enviar</button>
       </div>
     </div>
   </form>

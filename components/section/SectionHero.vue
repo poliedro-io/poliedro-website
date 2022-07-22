@@ -21,7 +21,7 @@
           class="text-gray-800 text-4xl sm:text-5xl xl:text-6xl font-bold"
         >
           Desarrollamos <br />
-          <span class="text-blue">la solución</span> que necesitas.
+          <span class="text-blue">la solución</span> que necesites.
         </h1>
         <p data-aos="fade-right" data-aos-once="true" data-aos-delay="200" class="mt-4 text-gray-600 text-xl">
           Cada empresa es única. Por eso digitalizamos a la medida de las <b class="font-bold">necesidades únicas</b> de

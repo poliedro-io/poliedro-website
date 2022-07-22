@@ -5,10 +5,10 @@
         <BaseImage class="hidden md:block" name="contact.jpg" />
       </div>
       <div class="col-span-1">
-        <BaseHeader alt supertitle="Contáctanos" title="Respondemos al instante." />
-        <p class="section-paragraph">
+        <BaseHeader color="green" alt supertitle="Contáctanos" title="Respondemos al instante." />
+        <p class="section-paragraph white">
           No dudes en contactarnos si quieres conocer algunos de nuestros proyectos, nuestra forma de trabajo, las tecnologías que usamos o concertar una reunión para contarnos tu problema. <br>
-          <a class="text-blue hover:underline" href="https://wa.me/56964033243">Hablemos por Whatsapp</a>, o envíanos un mensaje desde el siguiente formulario:
+          <a class="text-green hover:underline" href="https://wa.me/56964033243">Hablemos por Whatsapp</a>, o envíanos un mensaje desde el siguiente formulario:
         </p>
         <br />
         <ContactForm />
