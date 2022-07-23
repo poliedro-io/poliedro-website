@@ -2,7 +2,7 @@
   <BaseSection id="contact" bg-color="gray-800">
     <div class="md:grid md:grid-cols-2 md:gap-28">
       <div class="col-span-1 flex items-center">
-        <BaseImage class="hidden md:block" name="contact.jpg" />
+        <BaseImage class="hidden md:block filter invert saturate-0" name="sent.svg" />
       </div>
       <div class="col-span-1">
         <BaseHeader color="green" alt supertitle="Contáctanos" title="Respondemos al instante." />

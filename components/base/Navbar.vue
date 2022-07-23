@@ -97,7 +97,7 @@ export default {
     const sections = [
       { title: 'Soluciones', id: '#solutions' },
       { title: 'Características', id: '#features' },
-      { title: 'Garantías', id: '#guarantees' },
+      { title: 'Parner digital', id: '#partner' },
       { title: 'Beneficios', id: '#benefits' },
       { title: 'Clientes', id: '#customers' },
       { title: 'Contacto', id: '#contact' },

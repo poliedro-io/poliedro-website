@@ -1,14 +1,14 @@
 <template>
-  <footer class="max-w-screen-xl px-8 mx-auto">
-    <div class="w-full border-y border-[#DDDDDD]">
-      <div class="w-full lg:grid lg:grid-cols-3 lg:gap-8 lg:divide-x">
-        <a class="pl-4 py-6" v-smooth-scroll href="#hero">
+  <footer class="max-w-screen-xl mx-auto">
+    <div class="w-full">
+      <div class="w-full md:py-20 divide-y lg:divide-y-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:divide-x">
+        <div class="flex justify-center items-center md:items-start min-h-[300px]" v-smooth-scroll href="#hero">
           <img
             :src="require('~/assets/img/logo-lg.svg')"
             class="invert opacity-70 hover:opacity-100 h-16"
             alt="Logo Poliedro"
           />
-        </a>
+        </div>
 
         <div class="pl-4 py-6">
           <p class="text-lg text-semibold text-gray-800 mb-6">Contacto</p>
@@ -71,16 +71,11 @@ export default {
           icon: InstagramIcon,
           url: 'https://www.instagram.com/poliedro.io/',
         },
-        // {
-        //   text: 'Facebook',
-        //   icon: FacebookIcon,
-        //   url: 'facebook.svg',
-        // },
       ],
       sections: [
         { text: 'Servicios', url: '#services' },
         { text: 'Funcionalidades', url: '#features' },
-        { text: 'Garantías', url: '#guarantees' },
+        { text: 'Partner digital', url: '#partner' },
         { text: 'Clientes', url: '#customers' },
         { text: 'Contacto', url: '#contact' },
       ],

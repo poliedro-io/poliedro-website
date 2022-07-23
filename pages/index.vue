@@ -6,7 +6,7 @@
 
     <SectionFeatures :items="features" />
 
-    <SectionGuarantee />
+    <SectionPartner />
 
     <SectionBenefits :items="benefits" />
 
@@ -24,7 +24,7 @@ export default {
   async asyncData({ $content, params }) {
     const solutions = await $content('solutions', params.slug).sortBy('id', 'asc').fetch()
     const features = await $content('features', params.slug).sortBy('id', 'asc').fetch()
-    const benefits = await $content('benefits', params.slug).sortBy('id', 'asc').fetch()
+    const benefits = await $content('digitalization', params.slug).sortBy('id', 'asc').fetch()
     return {
       solutions,
       features,

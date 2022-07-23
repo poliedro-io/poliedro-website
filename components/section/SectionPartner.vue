@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="guarantees" bg-color="gray-800">
+  <BaseSection id="partner" bg-color="gray-800">
     <div class="grid md:grid-cols-2 gap-8">
       <div class="md:order-last">
         <BaseHeader supertitle="tu partner digital" title="Queremos digitalizar todos tus procesos" color="yellow" alt />
