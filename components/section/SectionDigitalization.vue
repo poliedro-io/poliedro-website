@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="benefits">
+  <BaseSection id="digitalization">
     <div class="lg:grid lg:grid-cols-2 lg:gap-8">
       <div>
         <BaseHeader title="Beneficios de la digitalización" supertitle="para considerar" color="blue" />

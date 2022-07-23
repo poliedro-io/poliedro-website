@@ -96,9 +96,9 @@ export default {
   data() {
     const sections = [
       { title: 'Soluciones', id: '#solutions' },
-      { title: 'Características', id: '#features' },
+      { title: 'Funcionalidades', id: '#features' },
       { title: 'Parner digital', id: '#partner' },
-      { title: 'Beneficios', id: '#benefits' },
+      { title: 'Beneficios', id: '#digitalization' },
       { title: 'Clientes', id: '#customers' },
       { title: 'Contacto', id: '#contact' },
     ]

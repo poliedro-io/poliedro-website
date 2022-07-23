@@ -21,7 +21,7 @@
         </div>
 
         <div class="pl-4 py-6">
-          <p class="text-lg text-semibold text-gray-800 mb-6">Secciones</p>
+          <p class="text-lg text-semibold text-gray-800 mb-6">Mapa del sitio</p>
           <ul class="space-y-4">
             <NavLink v-for="(item, index) of sections" :key="index" :name="item.text" :url="item.url" />
           </ul>
@@ -73,11 +73,12 @@ export default {
         },
       ],
       sections: [
-        { text: 'Servicios', url: '#services' },
-        { text: 'Funcionalidades', url: '#features' },
-        { text: 'Partner digital', url: '#partner' },
-        { text: 'Clientes', url: '#customers' },
-        { text: 'Contacto', url: '#contact' },
+        { text: 'Servicios', url: '#services', icon: '' },
+        { text: 'Funcionalidades', url: '#features', icon: '' },
+        { text: 'Partner digital', url: '#partner', icon: '' },
+        { text: 'Digitalización', url: '#digitalization', icon: '' },
+        { text: 'Clientes', url: '#customers', icon: '' },
+        { text: 'Contacto', url: '#contact', icon: '' },
       ],
     }
   },

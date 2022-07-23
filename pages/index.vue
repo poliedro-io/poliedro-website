@@ -8,7 +8,7 @@
 
     <SectionPartner />
 
-    <SectionBenefits :items="benefits" />
+    <SectionDigitalization :items="digitalization" />
 
     <SectionCustomers />
 
@@ -24,11 +24,11 @@ export default {
   async asyncData({ $content, params }) {
     const solutions = await $content('solutions', params.slug).sortBy('id', 'asc').fetch()
     const features = await $content('features', params.slug).sortBy('id', 'asc').fetch()
-    const benefits = await $content('digitalization', params.slug).sortBy('id', 'asc').fetch()
+    const digitalization = await $content('digitalization', params.slug).sortBy('id', 'asc').fetch()
     return {
       solutions,
       features,
-      benefits,
+      digitalization,
     }
   },
 }
