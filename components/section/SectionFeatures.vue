@@ -10,8 +10,7 @@
         </p>
 
         <p class="section-paragraph">
-          Las plataformas que desarrollamos constan de aplicaciones web con acceso diferenciado por roles, totalmente
-          integradas entre sí con bases de datos en tiempo real en la nube y adaptadas a todos los dispositivos.
+          Las plataformas que desarrollamos constan de aplicaciones web con acceso diferenciado por roles con bases de datos en tiempo real en la nube y adaptadas a todos los dispositivos.
         </p>
 
         <div class="hidden lg:block my-8">
@@ -30,10 +29,12 @@
             color="violet"
           />
         </dl>
+
+            <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn violet">Saber más</button>
+
       </div>
     </div>
 
-    <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn violet">Saber más</button>
   </BaseSection>
 </template>
 

@@ -6,8 +6,7 @@
 
         <p class="section-paragraph">
           Hoy en día las tecnologías digitales facilitan enormemente la forma en que trabajamos. En el ámbito
-          empresarial, aprovechar estas nuevas herramientas es <b>indispensable</b> para optimizar los procesos,
-          logrando así una <b>ventaja sustancial</b> respecto a la competencia.
+          empresarial, aprovechar estas nuevas herramientas es <b>indispensable</b> para optimizar los procesos y lograr así una <b>ventaja sustancial</b> respecto a la competencia.
         </p>
         <p class="section-paragraph">Para una empresa moderna la digitalización debe ser una prioridad.</p>
 

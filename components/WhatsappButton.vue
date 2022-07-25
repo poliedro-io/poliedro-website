@@ -14,6 +14,10 @@
   margin: 1rem;
   z-index: 10;
 }
+
+.wsp:hover {
+  background: rgb(54, 151, 65);
+}
 .wsp:after {
   content: '';
   position: absolute;
@@ -34,12 +38,21 @@
     height: 64px;
     opacity: 0.4;
   }
-  10%,
-  100% {
+  10% {
     left: -32px;
     bottom: -32px;
     width: 128px;
     height: 128px;
+    opacity: 0;
+  }
+  11% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
     opacity: 0;
   }
 }

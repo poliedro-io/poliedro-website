@@ -13,6 +13,7 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   safelist: [
+    'bg-gray',
     'bg-blue',
     'bg-green',
     'bg-yellow',

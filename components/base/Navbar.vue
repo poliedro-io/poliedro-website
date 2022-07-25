@@ -98,7 +98,7 @@ export default {
       { title: 'Soluciones', id: '#solutions' },
       { title: 'Funcionalidades', id: '#features' },
       { title: 'Parner digital', id: '#partner' },
-      { title: 'Beneficios', id: '#digitalization' },
+      { title: 'Digitalización', id: '#digitalization' },
       { title: 'Clientes', id: '#customers' },
       { title: 'Contacto', id: '#contact' },
     ]

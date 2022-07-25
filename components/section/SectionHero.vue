@@ -1,5 +1,5 @@
 <template>
-  <BaseSection :noPadding="true" style="margin-top: 64px" class="bg-gradient min-h-[70vh]" id="hero">
+  <BaseSection noPaddingY class="bg-gradient min-h-[70vh] mt-[64px] mb-20" id="hero">
     <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
       <img
         class="lg:order-last"

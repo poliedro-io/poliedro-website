@@ -1,5 +1,5 @@
 <template>
-  <BaseSection no-padding-x id="solutions" bg-color="gray-800">
+  <BaseSection no-padding-x id="solutions" class="dark-bg" separatorTop separatorBottom >
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <BaseHeader alt color="green" center supertitle="Soluciones a la medida" title="Digitalizamos todos tus procesos." />
@@ -9,15 +9,12 @@
         <p class="section-paragraph white max-w-2xl lg:text-center">
           Tenemos experiencia desarrollando todo tipo de soluciones empresariales. De acuerdo a las necesidades de nuestros clientes integramos <b>módulos diversos</b> para digitalizar procesos operacionales, administrativos y comerciales. 
         </p>
-        <!-- <p class="section-paragraph max-w-2xl lg:text-center">
-          De esta forma 
-        </p> -->
       </div>
     </div>
 
     <div class="my-12">
       <div
-        class="px-4 pb-6 snap-x flex overflow-x-auto w-full gap-4 md:snap-none md:grid md:grid-cols-3 xl:grid-cols-4 md:gap-x-8 md:gap-y-12"
+        class="px-4 pb-6 snap-x flex overflow-x-auto w-full gap-4 md:snap-none md:grid md:grid-cols-3 xl:grid-cols-4 md:gap-12"
       >
         <div
           v-for="(item, index) in items || []"

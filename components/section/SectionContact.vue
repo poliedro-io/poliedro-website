@@ -1,14 +1,12 @@
 <template>
-  <BaseSection id="contact" bg-color="gray-800">
-    <div class="md:grid md:grid-cols-2 md:gap-28">
-      <div class="col-span-1 flex items-center">
-        <BaseImage class="hidden md:block filter invert saturate-0" name="sent.svg" />
-      </div>
-      <div class="col-span-1">
+  <BaseSection id="contact" class="dark-bg" separatorTop separatorBottom>
+    <div class="flex justify-center">
+
+      <div class="max-w-xl">
         <BaseHeader color="green" alt supertitle="Contáctanos" title="Respondemos al instante." />
         <p class="section-paragraph white">
-          No dudes en contactarnos si quieres conocer algunos de nuestros proyectos, nuestra forma de trabajo, las tecnologías que usamos o concertar una reunión para contarnos tu problema. <br>
-          <a class="text-green hover:underline" href="https://wa.me/56964033243">Hablemos por Whatsapp</a>, o envíanos un mensaje desde el siguiente formulario:
+          No dudes en contactarnos si quieres conocer nuestra forma de trabajo, las tecnologías que usamos o concertar una reunión para contarnos tu problema. <br>
+          <a class="text-green hover:underline" href="https://wa.me/56964033243">Hablemos por Whatsapp</a>, o envíanos un mensaje con el siguiente formulario:
         </p>
         <br />
         <ContactForm />
