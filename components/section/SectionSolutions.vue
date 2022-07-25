@@ -19,10 +19,10 @@
         <div
           v-for="(item, index) in items || []"
           :key="index"
-          class="scroll-ml-4 snap-start shrink-0 w-[80%] max-w-[300px] md:w-fit"
+          class="scroll-ml-4 snap-start shrink-0 w-[80%] md:w-[100%]"
         >
-          <div class="rounded-lg overflow-hidden">
-            <img :src="require(`~/assets/img/solutions/${item.image || 'image.jpg'}`)" class="relative shrink-0 shadow-xl bg-white h-[180px]" />
+          <div class="max-w-[100%] h-[180px] rounded-lg overflow-hidden bg-white flex justify-center align-center shadow-xl">
+            <img :src="require(`~/assets/img/solutions/${item.image || 'dashboard.png'}`)" class="relative shrink-0 w-auto" />
           </div>
           <p class="mt-4 text-base font-medium text-yellow">{{ item.title }}</p>
           <p class="text-sm text-gray-200">
