@@ -1,8 +1,13 @@
 <template>
   <BaseSection id="partner" class="dark-bg" separatorTop separatorBottom>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="md:order-last">
-        <BaseHeader supertitle="tu partner digital" title="Queremos digitalizar todos tus procesos" color="yellow" alt />
+    <div class="grid md:grid-cols-2 gap-16">
+      <div>
+        <BaseHeader
+          supertitle="tu partner digital"
+          title="Queremos digitalizar todos tus procesos"
+          color="yellow"
+          alt
+        />
 
         <p class="section-paragraph white">
           Nuestra intención es acompañar de forma permanente el crecimiento de tu empresa, ayudándote a digitalizar
@@ -21,15 +26,10 @@
           </li>
         </ul>
 
-    <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Saber más</button>
-
-        <!-- <a v-smooth-scroll href="#contact" class="flex justify-end text-green hover:underline items-center">
-          <span>Saber más</span>
-          <ArrowRightIcon class="ml-2" :size="16" />
-        </a> -->
+        <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Saber más</button>
       </div>
 
-      <BaseImage :name="'advanced-trading-tools.webp'" />
+      <BaseImage class="self-center hidden md:block rounded-full" :name="'partner.webp'" />
     </div>
   </BaseSection>
 </template>
@@ -52,4 +52,3 @@ export default {
   },
 }
 </script>
-

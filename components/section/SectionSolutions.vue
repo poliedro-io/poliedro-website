@@ -2,7 +2,7 @@
   <BaseSection no-padding-x id="solutions" class="dark-bg" separatorTop separatorBottom >
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <BaseHeader alt color="green" center supertitle="Soluciones a la medida" title="Digitalizamos todos tus procesos." />
+        <BaseHeader alt color="yellow" center supertitle="Soluciones a la medida" title="Digitalizamos todos tus procesos." />
       </div>
 
       <div class="flex lg:justify-center">
@@ -24,7 +24,7 @@
           <div class="rounded-lg overflow-hidden">
             <img :src="require(`~/assets/img/solutions/${item.image || 'image.jpg'}`)" class="relative shrink-0 shadow-xl bg-white h-[180px]" />
           </div>
-          <p class="mt-4 text-base font-medium text-green">{{ item.title }}</p>
+          <p class="mt-4 text-base font-medium text-yellow">{{ item.title }}</p>
           <p class="text-sm text-gray-200">
             {{ item.description }}
           </p>
@@ -32,8 +32,8 @@
       </div>
     </div>
 
-    <div class="px-4 sm:px-6 lg:px-8">
-      <a v-smooth-scroll href="#contact" class="btn green w-40">Saber más</a>
+    <div class="px-4 sm:px-6 lg:px-8 sm:flex sm:justify-center">
+      <a v-smooth-scroll href="#contact" class="btn yellow w-40">Saber más</a>
     </div>
   </BaseSection>
 </template>

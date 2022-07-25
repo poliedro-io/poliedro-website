@@ -1,11 +1,11 @@
 <template>
-  <BaseSection noPaddingY class="bg-gradient min-h-[70vh] mt-[64px] mb-20" id="hero">
+  <BaseSection noPaddingY class="min-h-[70vh] mt-[64px] mb-20 flex items-center" id="hero">
     <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
       <img
-        class="lg:order-last"
+        class="py-8 lg:my-0 lg:order-last"
         data-aos="fade-up"
         data-aos-once="true"
-        :src="require('~/assets/img/hero-image.webp')"
+        :src="require('~/assets/img/hero.webp')"
       />
       <div>
         <span

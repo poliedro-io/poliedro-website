@@ -1,5 +1,5 @@
 <template>
-  <img v-bind:style="{'mix-blend-mode': transparent ? 'multiply' : ''}" :src="require('~/assets/img/' + name)" :alt="name" />
+  <img v-bind="$attrs" v-bind:style="{'mix-blend-mode': transparent ? 'multiply' : ''}" :src="require('~/assets/img/' + name)" :alt="name" />
 </template>
 <script>
 export default {

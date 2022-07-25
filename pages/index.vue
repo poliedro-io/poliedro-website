@@ -12,11 +12,7 @@
 
     <SectionCustomers />
 
-
-
     <SectionContact />
-
-
   </div>
 </template>
 

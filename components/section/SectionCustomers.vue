@@ -2,16 +2,18 @@
   <BaseSection :id="'customers'">
     <div class="lg:text-center">
       <BaseHeader
-        color="violet"
+        color="blue"
         center
         supertitle="Súmate a la digitalización"
         title="Nuestros clientes confían en nosotros"
       />
     </div>
 
-    <div class="flex justify-center">
-      <p class="section-paragraph max-w-2xl text-center">
-        Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que les brindamos a medida que sus negocios crecen. Nos enorgullece ver cómo gracias a las soluciones que les brindamos aumentan sus ventas, optimizan sus procesos de negocio o gestionan sus operaciones desde sus celulares. 
+    <div class="flex justify-start md:justify-center">
+      <p class="section-paragraph max-w-2xl text-left md:text-center">
+        Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que les brindamos a
+        medida que sus negocios crecen. Nos enorgullece ver cómo gracias a las soluciones que les brindamos aumentan sus
+        ventas, optimizan sus procesos de negocio o gestionan sus operaciones desde sus celulares.
       </p>
     </div>
 
@@ -25,6 +27,14 @@
       >
         <img :src="require('~/assets/img/customers/' + item.name + '.webp')" :alt="item.name" />
       </a>
+    </div>
+
+    <div class="sm:flex sm:justify-center">
+      <button v-smooth-scroll href="#contact" class="mt-8 w-40 btn blue">Contactar</button>
+    </div>
+
+    <div class="mt-24 max-w-lg mx-auto">
+      <BaseImage name="customers.webp" />
     </div>
   </BaseSection>
 </template>
