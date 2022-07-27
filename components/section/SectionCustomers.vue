@@ -11,9 +11,8 @@
 
     <div class="flex justify-start md:justify-center">
       <p class="section-paragraph max-w-2xl text-left md:text-center">
-        Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que les brindamos a
-        medida que sus negocios crecen. Nos enorgullece ver cómo gracias a las soluciones que les brindamos aumentan sus
-        ventas, optimizan sus procesos de negocio o gestionan sus operaciones desde sus celulares.
+        Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que desarrollamos a medida que sus negocios crecen. <br>Nos enorgullece ver cómo aumentan sus
+        ventas, optimizan sus procesos de negocio o gestionan sus operaciones desde el celular, ahora que ya están digitalizados.
       </p>
     </div>
 

@@ -80,8 +80,8 @@
             >{{ item.title }}</a
           >
           <div class="flex flex-col space-y-2 mt-2">
-            <a href="https://wa.me/56964033243" class="navbar-button">Enviar whatsapp</a>
-            <a v-smooth-scroll class="navbar-button" aria-current="page" @click="downloadBrochure"
+            <a href="https://wa.me/56964033243" class="btn yellow" style="padding: 8px">Enviar whatsapp</a>
+            <a v-smooth-scroll class="btn yellow" style="padding: 8px" aria-current="page" @click="downloadBrochure"
               >Descargar Brochure</a
             >
           </div>

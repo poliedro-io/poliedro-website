@@ -12,13 +12,13 @@
           data-aos="fade-right"
           data-aos-once="true"
           class="text-base text-blue font-semibold uppercase tracking-wide"
-          >digitalíza tu empresa</span
+          >digitaliza tu empresa</span
         >
         <h1
           data-aos="fade-right"
           data-aos-once="true"
           data-aos-delay="100"
-          class="text-gray-800 text-4xl sm:text-5xl xl:text-6xl font-bold"
+          class="text-gray-800 text-4xl sm:text-5xl xl:text-6xl font-extrabold"
         >
           Desarrollamos <br />
           <span class="text-blue">la solución</span> que necesites<span class="text-blue">.</span>
