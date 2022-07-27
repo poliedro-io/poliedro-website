@@ -7,25 +7,26 @@
             src="/img/logo-lg.svg"
             class="invert opacity-70 hover:opacity-100 h-16"
             alt="Logo Poliedro"
-            width="300px"
+            width="300"
+            height="300"
           />
         </div>
 
         <div class="pl-4 py-6">
           <p class="text-lg text-semibold text-gray-800 mb-6">Contacto</p>
-          <ul class="space-y-4">
+          <div class="space-y-4">
             <div v-for="(item, index) of contact" :key="index" class="flex space-x-4">
               <component v-bind:is="item.icon"></component>
               <NavLink :name="item.text" :url="item.url" />
             </div>
-          </ul>
+          </div>
         </div>
 
         <div class="pl-4 py-6">
           <p class="text-lg text-semibold text-gray-800 mb-6">Mapa del sitio</p>
-          <ul class="space-y-4">
+          <div class="space-y-4">
             <NavLink v-for="(item, index) of sections" :key="index" :name="item.text" :url="item.url" />
-          </ul>
+          </div>
         </div>
       </div>
     </div>

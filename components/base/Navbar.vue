@@ -32,7 +32,8 @@
               <nuxt-img placeholder loading="lazy"
                 :class="[{ invert: !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
                 src="/img/logo-lg.svg"
-                width="200px"
+                width="200"
+                height="100"
                 alt="Workflow"
               />
             </a>
