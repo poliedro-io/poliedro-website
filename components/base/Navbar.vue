@@ -29,9 +29,11 @@
 
           <div class="flex-1 flex items-center lg:justify-between">
             <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
-              <img
-                :class="[{ 'invert': !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
-                src="~/assets/img/logo-lg.svg"
+              <nuxt-img placeholder loading="lazy"
+                placeholder
+                :class="[{ invert: !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
+                src="/img/logo-lg.svg"
+                width="200px"
                 alt="Workflow"
               />
             </a>
@@ -50,16 +52,10 @@
             </div>
 
             <div class="space-x-2 hidden xl:flex">
-              <a
-                v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']"
-                href="https://wa.me/56964033243"
-              >
+              <a v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']" href="https://wa.me/56964033243">
                 Enviar Whatsapp</a
               >
-              <button
-                v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']"
-                @click="downloadBrochure"
-              >
+              <button v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']" @click="downloadBrochure">
                 Descargar Brochure
               </button>
             </div>
@@ -178,7 +174,7 @@ export default {
   transform: translateY(calc(356px + 64px));
   opacity: 1 !important;
 }
-.invert{
+.invert {
   filter: invert(1);
 }
 </style>

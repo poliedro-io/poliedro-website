@@ -1,11 +1,12 @@
 <template>
   <BaseSection noPaddingY class="min-h-[70vh] mt-[64px] mb-20 flex items-center" id="hero">
     <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
-      <img
+      <nuxt-img placeholder loading="lazy"
+        sizes="sm:100vw lg:576px"
         class="py-8 lg:my-0 lg:order-last"
         data-aos="fade-up"
         data-aos-once="true"
-        :src="require('~/assets/img/hero.svg')"
+        src="/img/hero.svg"
       />
       <div>
         <span
@@ -23,7 +24,12 @@
           Desarrollamos <br />
           <span class="text-blue">la solución</span> que necesites<span class="text-blue">.</span>
         </h1>
-        <p data-aos="fade-right" data-aos-once="true" data-aos-delay="200" class="mt-4 text-gray-600 text-lg sm:text-xl">
+        <p
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-delay="200"
+          class="mt-4 text-gray-600 text-lg sm:text-xl"
+        >
           Cada empresa es única. Por eso digitalizamos a la medida de las <b class="font-bold">necesidades únicas</b> de
           tu empresa.
         </p>

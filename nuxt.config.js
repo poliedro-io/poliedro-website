@@ -24,7 +24,11 @@ export default {
   css: ['@/assets/css/main.css', 'aos/dist/aos.css'],
   plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],
   components: true,
-  buildModules: ['@nuxtjs/eslint-module', '@nuxt/postcss8'],
+  buildModules: [
+    '@nuxtjs/eslint-module', 
+    '@nuxt/postcss8',
+    '@nuxt/image'
+  ],
   modules: [
     '@nuxt/content'
   ],

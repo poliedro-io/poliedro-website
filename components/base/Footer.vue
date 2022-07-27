@@ -3,10 +3,11 @@
     <div class="w-full">
       <div class="w-full md:py-20 divide-y lg:divide-y-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:divide-x">
         <div class="flex justify-center items-center md:items-start min-h-[300px]" v-smooth-scroll href="#hero">
-          <img
-            :src="require('~/assets/img/logo-lg.svg')"
+          <nuxt-img placeholder loading="lazy"
+            src="/img/logo-lg.svg"
             class="invert opacity-70 hover:opacity-100 h-16"
             alt="Logo Poliedro"
+            width="300px"
           />
         </div>
 
@@ -29,7 +30,7 @@
       </div>
     </div>
     <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
-      &reg; Poliedro ltda. 2022. <br>
+      &reg; Poliedro ltda. 2022. <br />
       Todos los derechos reservados
     </div>
   </footer>

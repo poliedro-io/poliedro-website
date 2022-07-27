@@ -9,8 +9,8 @@
           digitales. De esta forma nos aseguramos de entregar siempre soluciones potentes, eficientes e intuitivas.
         </p>
 
-        <div class="lg:flex lg:justify-center my-8">
-          <BaseImage name="rocket.svg" />
+        <div class="lg:flex lg:justify-center max-w-lg my-8">
+          <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/rocket.svg" />
         </div>
       </div>
 
@@ -26,11 +26,9 @@
           />
         </dl>
 
-            <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn blue">Saber más</button>
-
+        <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn blue">Saber más</button>
       </div>
     </div>
-
   </BaseSection>
 </template>
 

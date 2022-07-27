@@ -11,8 +11,9 @@
 
     <div class="flex justify-start md:justify-center">
       <p class="section-paragraph max-w-2xl text-left md:text-center">
-        Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que desarrollamos a medida que sus negocios crecen. <br>Nos enorgullece ver cómo aumentan sus
-        ventas, optimizan sus procesos de negocio o gestionan sus operaciones desde el celular, ahora que ya están digitalizados.
+        Son múltiples los rubros en que se desempeñan nuestros clientes, y múltiples las soluciones que desarrollamos a
+        medida que sus negocios crecen. <br />Nos enorgullece ver cómo aumentan sus ventas, optimizan sus procesos de
+        negocio o gestionan sus operaciones desde el celular, ahora que ya están digitalizados.
       </p>
     </div>
 
@@ -32,8 +33,8 @@
       <button v-smooth-scroll href="#contact" class="mt-8 w-40 btn blue">Contactar</button>
     </div>
 
-    <div class="mt-24 max-w-lg mx-auto">
-      <BaseImage name="customers.svg" />
+    <div class="mt-24 max-w-xl mx-auto">
+      <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:576px" src="/img/customers.svg" />
     </div>
   </BaseSection>
 </template>
