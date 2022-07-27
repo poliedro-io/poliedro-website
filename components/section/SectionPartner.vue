@@ -29,7 +29,7 @@
         <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Contactar</button>
       </div>
 
-      <div  class="bg-white self-center rounded-full max-w-lg">
+      <div  class="bg-white self-center rounded-full max-w-lg overflow-hidden">
         <nuxt-img placeholder loading="lazy"
           sizes="sm:100vw lg:512px"
           src="/img/partner.svg"

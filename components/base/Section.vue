@@ -14,7 +14,11 @@
       </svg>
     </div>
 
-    <div :class="['max-w-7xl mx-auto', noPaddingX ? 'px-0' : 'px-4 sm:px-6 lg:px-8']">
+    <div
+      data-aos="fade-up"
+      data-aos-once="true"
+      :class="['max-w-7xl mx-auto', noPaddingX ? 'px-0' : 'px-4 sm:px-6 lg:px-8']"
+    >
       <slot></slot>
     </div>
 
@@ -34,7 +38,9 @@
   </section>
 </template>
 <script>
+import aosMixin from '@/mixins/aos'
 export default {
+  mixins: [aosMixin],
   name: 'BaseSection',
   props: {
     id: {

@@ -27,14 +27,9 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module', 
     '@nuxt/postcss8',
-    '@nuxt/image'
-  ],
-  modules: [
+    '@nuxt/image',
     '@nuxt/content'
   ],
-  content: {
-
-  },
   build: {
     postcss: {
       plugins: {
