@@ -33,7 +33,7 @@
     </div>
 
     <div class="px-4 sm:px-6 lg:px-8 sm:flex sm:justify-center">
-      <a v-smooth-scroll href="#contact" class="btn yellow w-40">Saber más</a>
+      <a v-smooth-scroll href="#contact" class="btn yellow w-40">Contactar</a>
     </div>
   </BaseSection>
 </template>

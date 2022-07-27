@@ -1,5 +1,5 @@
 <template>
-  <form name="contact" class="md:flex md:items-center" method="post" data-netlify="true" netlify-honeypot="test-field">
+  <form name="contact" class="md:flex md:items-center" method="post" data-netlify="true" netlify-honeypot="test-field" action="/form">
     <input type="hidden" name="form-name" value="contact" />
 
     <div class="md:hover:shadow-xl transition">

@@ -42,14 +42,9 @@
 .btn.blue {
   @apply focus:ring-blue bg-blue hover:bg-blue-800  hover:shadow-blue-500/50;
 }
-.btn.green {
-  @apply focus:ring-green bg-green hover:bg-green-800  hover:shadow-green-500/50;
-}
+
 .btn.yellow {
-  @apply focus:ring-yellow bg-yellow hover:bg-yellow-800  hover:shadow-yellow-500/50 text-gray-600;
-}
-.btn.violet {
-  @apply focus:ring-violet bg-violet hover:bg-violet-800  hover:shadow-violet-500/50;
+  @apply focus:ring-yellow-600 bg-yellow-600 hover:bg-yellow-800  hover:shadow-yellow-500/50 text-white
 }
 
 .section-paragraph {

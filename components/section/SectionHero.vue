@@ -12,7 +12,7 @@
           data-aos="fade-right"
           data-aos-once="true"
           class="text-base text-blue font-semibold uppercase tracking-wide"
-          >Digitalízate</span
+          >digitalíza tu empresa</span
         >
         <h1
           data-aos="fade-right"
@@ -21,15 +21,16 @@
           class="text-gray-800 text-4xl sm:text-5xl xl:text-6xl font-bold"
         >
           Desarrollamos <br />
-          <span class="text-blue">la solución</span> que necesites.
+          <span class="text-blue">la solución</span> que necesites<span class="text-blue">.</span>
         </h1>
-        <p data-aos="fade-right" data-aos-once="true" data-aos-delay="200" class="mt-4 text-gray-600 text-xl">
+        <p data-aos="fade-right" data-aos-once="true" data-aos-delay="200" class="mt-4 text-gray-600 text-lg sm:text-xl">
           Cada empresa es única. Por eso digitalizamos a la medida de las <b class="font-bold">necesidades únicas</b> de
           tu empresa.
         </p>
 
-        <div data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
-          <button v-smooth-scroll href="#contact" outlined class="w-40 btn blue mt-4">Contactar</button>
+        <div class="md:flex md:space-x-4" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
+          <button v-smooth-scroll href="#contact" outlined class="w-full md:w-40 btn blue mt-4">Contactar</button>
+          <button v-smooth-scroll href="#solutions" outlined class="w-full md:w-40 btn yellow mt-4">Saber más</button>
         </div>
       </div>
     </div>

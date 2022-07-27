@@ -29,7 +29,8 @@
       </div>
     </div>
     <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
-      &reg; Poliedro ltda. 2022. Todos los derechos reservados
+      &reg; Poliedro ltda. 2022. <br>
+      Todos los derechos reservados
     </div>
   </footer>
 </template>

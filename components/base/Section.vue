@@ -57,9 +57,9 @@ export default {
   right: 0;
 }
 .separator.top {
-  top: 0;
+  top: -2px;
 }
 .separator.bottom {
-  bottom: 0;
+  bottom: -2px;
 }
 </style>

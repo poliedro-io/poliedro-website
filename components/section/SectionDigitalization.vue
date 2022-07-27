@@ -9,7 +9,7 @@
           empresarial, aprovechar estas nuevas herramientas es <b>indispensable</b> para optimizar los procesos y lograr
           así una <b>ventaja sustancial</b> respecto a la competencia.
         </p>
-        <p class="section-paragraph">Para una empresa moderna la digitalización debe ser una prioridad.</p>
+        <p class="section-paragraph">Para una empresa moderna la digitalización debe ser una prioridad, y los motivos sobran.</p>
 
         <div class="hidden my-8 lg:flex lg:justify-center">
           <BaseImage class="max-w-md" name="digitalization.webp" />

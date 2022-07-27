@@ -26,7 +26,7 @@
           </li>
         </ul>
 
-        <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Saber más</button>
+        <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Contactar</button>
       </div>
 
       <BaseImage class="self-center hidden md:block rounded-full" :name="'partner.webp'" />
