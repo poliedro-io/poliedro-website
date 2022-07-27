@@ -30,7 +30,6 @@
           <div class="flex-1 flex items-center lg:justify-between">
             <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
               <nuxt-img placeholder loading="lazy"
-                placeholder
                 :class="[{ invert: !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
                 src="/img/logo-lg.svg"
                 width="200px"

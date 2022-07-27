@@ -25,7 +25,7 @@
         :href="item.url"
         class="cursor-default brand px-4 h-[100px] flex items-center justify-center bg-gray-100 rounded-md"
       >
-        <img :src="require('~/assets/img/customers/' + item.name + '.webp')" :alt="item.name" />
+        <nuxt-img placeholder loading="lazy" width="300px" :src="'/img/customers/' + item.name + '.webp'" />
       </a>
     </div>
 
