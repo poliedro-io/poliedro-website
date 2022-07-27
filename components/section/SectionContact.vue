@@ -1,8 +1,8 @@
 <template>
   <BaseSection id="contact" class="dark-bg" separatorTop separatorBottom>
     <div class="lg:grid lg:grid-cols-2 lg:gap-16">
-       <div class="my-16 self-center justify-start max-w-lg overflow-hidden rounded-full hidden lg:flex">
-        <BaseImage name="contact.webp" />
+       <div class="bg-white my-16 self-center justify-start max-w-lg overflow-hidden rounded-full hidden lg:flex">
+        <BaseImage name="message.svg" />
       </div>
       <div class="max-w-xl mx-auto">
         <BaseHeader color="yellow" alt supertitle="Contáctanos" title="Respondemos al instante." />

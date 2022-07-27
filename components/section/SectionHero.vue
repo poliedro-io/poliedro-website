@@ -5,7 +5,7 @@
         class="py-8 lg:my-0 lg:order-last"
         data-aos="fade-up"
         data-aos-once="true"
-        :src="require('~/assets/img/hero.webp')"
+        :src="require('~/assets/img/hero.svg')"
       />
       <div>
         <span

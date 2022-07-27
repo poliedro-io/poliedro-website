@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-[100vh] flex flex-col items-center text-left lg:text-center p-4">
-    <div class="lg:opacity-80 mb-6">
-      <BaseImage class="max-h-[500px]" name="contact.webp" />
+    <div class="lg:opacity-80 mb-6 w-[500px] max-w-[100%]">
+      <BaseImage class="max-h-[500px]" name="message-blue.svg" />
     </div>
     <div class="max-w-lg mb-6">
       <p class="text-blue text-3xl sm:text-4xl leading-tight font-semibold mb-4">¡Mensaje enviado!</p>

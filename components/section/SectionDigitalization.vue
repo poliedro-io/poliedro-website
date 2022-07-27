@@ -11,8 +11,8 @@
         </p>
         <p class="section-paragraph">Para una empresa moderna la digitalización debe ser una prioridad, y los motivos sobran.</p>
 
-        <div class="hidden my-8 lg:flex lg:justify-center">
-          <BaseImage class="max-w-md" name="digitalization.webp" />
+        <div class="my-8 lg:flex lg:justify-center">
+          <BaseImage class="max-w-md" name="digitalization.svg" />
         </div>
       </div>
       <div>

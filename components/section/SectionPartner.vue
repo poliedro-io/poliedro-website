@@ -29,7 +29,7 @@
         <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Contactar</button>
       </div>
 
-      <BaseImage class="self-center hidden md:block rounded-full" :name="'partner.webp'" />
+      <BaseImage class="bg-white self-center hidden md:block rounded-full" :name="'partner.svg'" />
     </div>
   </BaseSection>
 </template>

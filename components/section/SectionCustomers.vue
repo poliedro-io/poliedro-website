@@ -34,7 +34,7 @@
     </div>
 
     <div class="mt-24 max-w-lg mx-auto">
-      <BaseImage name="customers.webp" />
+      <BaseImage name="customers.svg" />
     </div>
   </BaseSection>
 </template>

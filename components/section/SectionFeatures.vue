@@ -9,8 +9,8 @@
           digitales. De esta forma nos aseguramos de entregar siempre soluciones potentes, eficientes e intuitivas.
         </p>
 
-        <div class="hidden lg:block my-8">
-          <BaseImage name="features.webp" />
+        <div class="lg:flex lg:justify-center my-8">
+          <BaseImage name="rocket.svg" />
         </div>
       </div>
 
