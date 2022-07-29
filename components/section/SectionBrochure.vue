@@ -1,6 +1,6 @@
 <template>
   <BaseSection id="brochure" class="dark-bg">
-    <div class="py-24">
+    <div class="py-16">
       <BaseHeader alt color="yellow" center supertitle="Conócenos" title="Revisa nuestra presentación" />
       <p class="section-paragraph white max-w-lg sm:text-center sm:mx-auto">
         Te invitamos a descargar nuestro Brochure en formato PDF para que nos conozcas mejor. Te recomendamos
