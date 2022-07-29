@@ -1,6 +1,6 @@
 <template>
-  <BaseSection id="digitalization" no-padding-y>
-    <div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-48">
+  <BaseSection id="digitalization">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-16">
       <div>
         <BaseHeader title="Beneficios de la digitalización" supertitle="para considerar" color="blue" />
 
@@ -29,7 +29,7 @@
           />
         </dl>
 
-        <button v-smooth-scroll href="#contact" class="mt-8 w-40 btn blue">Contactar</button>
+        <button v-smooth-scroll href="#contact" class="mt-8 w-full sm:w-40 btn blue">Contactar</button>
       </div>
     </div>
   </BaseSection>

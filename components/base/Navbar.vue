@@ -4,7 +4,7 @@
       id="navbar"
       :class="[
         'transition duration-150 relative',
-        isNavbarActive || isMenuActive ? 'bg-gray-800 shadow-xl' : 'bg-white',
+        isNavbarActive || isMenuActive ? 'bg-gray-900 shadow-xl' : 'bg-white',
       ]"
     >
       <div class="max-w-7xl mx-auto px-2 lg:px-8">
@@ -29,7 +29,9 @@
 
           <div class="flex-1 flex items-center lg:justify-between">
             <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
-              <nuxt-img placeholder loading="lazy"
+              <nuxt-img
+                placeholder
+                loading="lazy"
                 :class="[{ invert: !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
                 src="/img/logo-lg.svg"
                 width="200"
@@ -64,7 +66,7 @@
       </div>
 
       <div id="mobile-menu" :class="['bg-gray-800 xl:hidden shadow-xl', isMenuActive ? 'active' : '']">
-        <div class="px-2 pt-2 pb-3 space-y-2">
+        <div class="py-4 space-y-2">
           <a
             v-for="(item, index) of sections"
             :key="index"
@@ -75,12 +77,11 @@
             @click="isMenuActive = false"
             >{{ item.title }}</a
           >
-          <div class="flex flex-col space-y-2 mt-2">
-            <a href="https://wa.me/56964033243" class="btn yellow" style="padding: 8px">Enviar whatsapp</a>
-            <a v-smooth-scroll class="btn yellow" style="padding: 8px" aria-current="page" @click="downloadBrochure"
-              >Descargar Brochure</a
-            >
-          </div>
+        </div>
+        <div class="py-4 space-y-2 border-t border-gray-600">
+            <a href="https://wa.me/56964033243" class="navbar-item yellow" aria-current="page">Enviar whatsapp</a>
+            <a v-smooth-scroll class="navbar-item yellow" aria-current="page" @click="downloadBrochure"
+              >Descargar Brochure</a>
         </div>
       </div>
     </nav>
@@ -93,7 +94,7 @@ export default {
     const sections = [
       { title: 'Soluciones', id: '#solutions' },
       { title: 'Funcionalidades', id: '#features' },
-      { title: 'Parner digital', id: '#partner' },
+      { title: 'Partner digital', id: '#partner' },
       { title: 'Digitalización', id: '#digitalization' },
       { title: 'Clientes', id: '#customers' },
       { title: 'Contacto', id: '#contact' },

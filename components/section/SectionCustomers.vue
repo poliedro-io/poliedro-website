@@ -30,7 +30,7 @@
     </div>
 
     <div class="sm:flex sm:justify-center">
-      <button v-smooth-scroll href="#contact" class="mt-8 w-40 btn blue">Contactar</button>
+      <button v-smooth-scroll href="#contact" class="mt-8 w-full sm:w-40 btn blue">Contactar</button>
     </div>
 
     <div class="mt-24 max-w-xl mx-auto">

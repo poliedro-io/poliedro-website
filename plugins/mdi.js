@@ -41,7 +41,7 @@ import GoogleCirclesExtendedIcon from 'vue-material-design-icons/GoogleCirclesEx
 import CellphoneIcon from 'vue-material-design-icons/Cellphone.vue'
 import LightningBoltOutlineIcon from 'vue-material-design-icons/LightningBoltOutline.vue'
 import WhatsappIcon from 'vue-material-design-icons/Whatsapp.vue'
-
+import CircleSmallIcon from 'vue-material-design-icons/CircleSmall.vue'
 
 const components = {
   ChevronDownIcon,
@@ -87,7 +87,9 @@ const components = {
   EmailIcon,
   PhoneIcon,
   FacebookIcon,
-  WhatsappIcon
+  WhatsappIcon,
+
+  CircleSmallIcon
 }
 
 Object.entries(components).forEach(([name, component]) =>

@@ -26,7 +26,7 @@
           />
         </dl>
 
-        <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn blue">Saber más</button>
+        <button v-smooth-scroll href="#contact" class="mt-16 w-full sm:w-40 btn blue">Contactar</button>
       </div>
     </div>
   </BaseSection>

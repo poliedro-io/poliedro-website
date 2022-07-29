@@ -26,7 +26,7 @@
           </li>
         </ul>
 
-        <button v-smooth-scroll href="#contact" class="mt-16 w-40 btn yellow">Contactar</button>
+        <button v-smooth-scroll href="#contact" class="mt-16 w-full sm:w-40 btn yellow">Contactar</button>
       </div>
 
       <div  class="bg-white self-center rounded-full max-w-lg overflow-hidden">

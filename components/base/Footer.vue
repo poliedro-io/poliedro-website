@@ -3,7 +3,9 @@
     <div class="w-full">
       <div class="w-full md:py-20 divide-y lg:divide-y-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:divide-x">
         <div class="flex justify-center items-center md:items-start min-h-[300px]" v-smooth-scroll href="#hero">
-          <nuxt-img placeholder loading="lazy"
+          <nuxt-img
+            placeholder
+            loading="lazy"
             src="/img/logo-lg.svg"
             class="invert opacity-70 hover:opacity-100 h-16"
             alt="Logo Poliedro"
@@ -14,23 +16,26 @@
 
         <div class="pl-4 py-6">
           <p class="text-lg text-semibold text-gray-800 mb-6">Contacto</p>
-          <div class="space-y-4">
+          <ul class="space-y-4">
             <div v-for="(item, index) of contact" :key="index" class="flex space-x-4">
               <component v-bind:is="item.icon"></component>
               <NavLink :name="item.text" :url="item.url" />
             </div>
-          </div>
+          </ul>
         </div>
 
         <div class="pl-4 py-6">
           <p class="text-lg text-semibold text-gray-800 mb-6">Mapa del sitio</p>
-          <div class="space-y-4">
-            <NavLink v-for="(item, index) of sections" :key="index" :name="item.text" :url="item.url" />
-          </div>
+          <ul class="space-y-4">
+            <div v-for="(item, index) of sections" :key="index" class="flex space-x-4 items-center">
+              <circle-small-icon />
+              <NavLink :name="item.text" :url="item.url" />
+            </div>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
+    <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900 border-t sm:border-t-0">
       &reg; Poliedro ltda. 2022. <br />
       Todos los derechos reservados
     </div>
@@ -80,6 +85,7 @@ export default {
         { text: 'Funcionalidades', url: '#features', icon: '' },
         { text: 'Partner digital', url: '#partner', icon: '' },
         { text: 'Digitalización', url: '#digitalization', icon: '' },
+        { text: 'Brochure', url: '#brochure', icon: '' },
         { text: 'Clientes', url: '#customers', icon: '' },
         { text: 'Contacto', url: '#contact', icon: '' },
       ],
