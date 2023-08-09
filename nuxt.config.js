@@ -1,6 +1,5 @@
 export default {
   target: 'static',
-  ssr: false,
   head: {
     title: 'Poliedro',
     htmlAttrs: {
