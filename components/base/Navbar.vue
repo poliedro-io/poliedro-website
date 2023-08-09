@@ -128,25 +128,15 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    handleScroll(event) {
+    handleScroll() {
       this.isMenuActive = false
-      const height = window.innerHeight
       const y = window.scrollY
-      this.isNavbarActive = height > 128
-      const sections = []
-
-      this.sections.foreEach((section) => {
-        const { top, bottom } = document.querySelector(section.id).getBoundingClientRect()
-        if (top < y && y < bottom) {
-          sections.push(section)
-        }
+      this.isNavbarActive = y > 128
+      const current = this.sections.find(({ id }) => {
+        const { top, bottom } = document.querySelector(id).getBoundingClientRect()
+        return top <= 200 && bottom > 100
       })
-      const current = sections[sections.length - 1]
-      if (current) {
-        this.currentId = current.id
-      } else {
-        this.currentId = null
-      }
+      this.currentId = current ? current.id : null
     },
     isSelected(id) {
       return id === this.currentId

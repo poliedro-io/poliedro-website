@@ -37,6 +37,7 @@
               placeholder
               loading="lazy"
               width="300"
+              height="auto"
               class="relative shrink-0 w-auto group-hover:opacity-70"
               :src="'/img/solutions/' + item.image"
             />

@@ -2,7 +2,15 @@
   <BaseSection id="contact" class="dark-bg" separatorTop separatorBottom>
     <div class="lg:grid lg:grid-cols-2 lg:gap-16">
       <div class="bg-white my-16 self-center justify-start max-w-lg overflow-hidden rounded-full hidden lg:flex">
-        <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/message.svg" alt="Contacto" />
+        <nuxt-img
+          width="512"
+          height="512"
+          placeholder
+          loading="lazy"
+          sizes="sm:100vw lg:512px"
+          src="/img/message.svg"
+          alt="Contacto"
+        />
       </div>
       <div class="max-w-xl mx-auto">
         <BaseHeader color="yellow" alt supertitle="Contáctanos" title="Respondemos al instante." />

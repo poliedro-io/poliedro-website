@@ -20,6 +20,8 @@
             sizes="sm:100vw lg:512px"
             src="/img/digitalization.svg"
             alt="Digitalización"
+            width="512"
+            height="512"
           />
         </div>
       </div>

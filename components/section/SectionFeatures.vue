@@ -16,6 +16,8 @@
             loading="lazy"
             sizes="sm:100vw lg:512px"
             src="/img/rocket.svg"
+            width="512"
+            height="512"
           />
         </div>
       </div>

@@ -28,7 +28,8 @@
         <nuxt-img
           placeholder
           loading="lazy"
-          width="300px"
+          height="80"
+          width="auto"
           :src="'/img/customers/' + item.name + '.webp'"
           :alt="item.name"
         />
@@ -40,7 +41,15 @@
     </div>
 
     <div class="mt-24 max-w-xl mx-auto">
-      <nuxt-img alt="Clientes" placeholder loading="lazy" sizes="sm:100vw lg:576px" src="/img/customers.svg" />
+      <nuxt-img
+        width="512"
+        height="512"
+        alt="Clientes"
+        placeholder
+        loading="lazy"
+        sizes="sm:100vw lg:576px"
+        src="/img/customers.svg"
+      />
     </div>
   </BaseSection>
 </template>
@@ -55,8 +64,8 @@ export default {
           url: 'http://www.ventasfama.cl/reparto.php',
         },
         {
-          name: 'multifruts',
-          url: 'https://www.instagram.com/multifruts/?hl=es',
+          name: 'steelnorte',
+          url: 'https://steelnorte.cl/',
         },
         {
           name: 'bertolino',

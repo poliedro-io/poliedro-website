@@ -30,7 +30,15 @@
       </div>
 
       <div class="bg-white self-center rounded-full max-w-lg overflow-hidden">
-        <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/partner.svg" alt="Partner digital" />
+        <nuxt-img
+          width="512"
+          height="512"
+          placeholder
+          loading="lazy"
+          sizes="sm:100vw lg:512px"
+          src="/img/partner.svg"
+          alt="Partner digital"
+        />
       </div>
     </div>
   </BaseSection>

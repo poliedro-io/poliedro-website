@@ -10,6 +10,8 @@
         data-aos-once="true"
         src="/img/hero.svg"
         alt="Soluciones digitales"
+        width="592"
+        height="459"
       />
       <div>
         <span

@@ -8,6 +8,8 @@
         sizes="sm:100vw lg:512px"
         class="max-h-[500px]"
         src="/img/message-blue.svg"
+        width="512"
+        height="512"
       />
     </div>
     <div class="max-w-lg mb-6">
