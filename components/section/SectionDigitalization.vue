@@ -14,7 +14,13 @@
         </p>
 
         <div class="my-8 lg:flex lg:justify-center max-w-lg">
-          <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/digitalization.svg" />
+          <nuxt-img
+            placeholder
+            loading="lazy"
+            sizes="sm:100vw lg:512px"
+            src="/img/digitalization.svg"
+            alt="Digitalización"
+          />
         </div>
       </div>
       <div>

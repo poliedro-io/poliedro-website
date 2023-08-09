@@ -36,7 +36,7 @@
                 src="/img/logo-lg.svg"
                 width="200"
                 height="100"
-                alt="Workflow"
+                alt="Logo poliedro grande"
               />
             </a>
             <div class="hidden xl:block">
@@ -57,9 +57,9 @@
               <a v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']" href="https://wa.me/56964033243">
                 Enviar Whatsapp</a
               >
-              <button v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']" @click="downloadBrochure">
+              <a v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']" :href="brochureURL" target="_blank">
                 Descargar Brochure
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -79,9 +79,10 @@
           >
         </div>
         <div class="py-4 space-y-2 border-t border-gray-600">
-            <a href="https://wa.me/56964033243" class="navbar-item yellow" aria-current="page">Enviar whatsapp</a>
-            <a v-smooth-scroll class="navbar-item yellow" aria-current="page" @click="downloadBrochure"
-              >Descargar Brochure</a>
+          <a href="https://wa.me/56964033243" class="navbar-item yellow" aria-current="page">Enviar whatsapp</a>
+          <a v-smooth-scroll class="navbar-item yellow" aria-current="page" :href="brochureURL" target="_blank"
+            >Descargar Brochure</a
+          >
         </div>
       </div>
     </nav>
@@ -106,6 +107,7 @@ export default {
       currentId: null,
       isMenuActive: false,
       isNavbarActive: false,
+      brochureURL: 'https://drive.google.com/file/d/1jNK6Rk6IWY_BHN9WnzZfDrWGZy_hkho_/view?usp=sharing',
     }
   },
   beforeMount() {
@@ -128,14 +130,18 @@ export default {
   methods: {
     handleScroll(event) {
       this.isMenuActive = false
-      const h = window.innerHeight
+      const height = window.innerHeight
       const y = window.scrollY
-      this.isNavbarActive = y > 128
+      this.isNavbarActive = height > 128
+      const sections = []
 
-      const current = this.sections.find(({ id }) => {
-        const { top, bottom } = document.querySelector(id).getBoundingClientRect()
-        return (top >= -h / 2 && top <= h / 2) || (bottom >= h / 2 && bottom <= h)
+      this.sections.foreEach((section) => {
+        const { top, bottom } = document.querySelector(section.id).getBoundingClientRect()
+        if (top < y && y < bottom) {
+          sections.push(section)
+        }
       })
+      const current = sections[sections.length - 1]
       if (current) {
         this.currentId = current.id
       } else {
@@ -149,13 +155,6 @@ export default {
       setTimeout(() => {
         this.isMenuActive = !this.isMenuActive
       }, 5)
-    },
-    downloadBrochure() {
-      const a = document.createElement('a')
-      a.setAttribute('href', 'https://drive.google.com/file/d/1jNK6Rk6IWY_BHN9WnzZfDrWGZy_hkho_/view?usp=sharing')
-      a.setAttribute('target', '_blank')
-      a.setAttribute('download', 'brochure-poliedro.pdf')
-      a.click()
     },
   },
 }

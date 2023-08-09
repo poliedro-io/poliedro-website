@@ -32,10 +32,17 @@
           <div
             class="max-w-[100%] h-[180px] rounded-lg overflow-hidden bg-white flex justify-center align-center shadow-xl"
           >
-            <nuxt-img placeholder loading="lazy" width="300" class="relative shrink-0 w-auto group-hover:opacity-70" :src="'/img/solutions/' + item.image" />
+            <nuxt-img
+              :alt="item.title"
+              placeholder
+              loading="lazy"
+              width="300"
+              class="relative shrink-0 w-auto group-hover:opacity-70"
+              :src="'/img/solutions/' + item.image"
+            />
           </div>
           <p class="mt-4 text-base font-medium text-yellow group-hover:text-yellow-400">{{ item.title }}</p>
-          <p class="text-sm text-gray-200  group-hover:text-white">
+          <p class="text-sm text-gray-200 group-hover:text-white">
             {{ item.description }}
           </p>
         </div>
@@ -58,7 +65,7 @@ export default {
 </script>
 
 <style>
-  .highlight{
-    filter: brightness(2)
-  }
+.highlight {
+  filter: brightness(2);
+}
 </style>

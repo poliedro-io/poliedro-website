@@ -17,20 +17,20 @@
         <div class="pl-4 py-6">
           <p class="text-lg text-semibold text-gray-800 mb-6">Contacto</p>
           <ul class="space-y-4">
-            <div v-for="(item, index) of contact" :key="index" class="flex space-x-4">
+            <li v-for="(item, index) of contact" :key="index" class="flex space-x-4">
               <component v-bind:is="item.icon"></component>
               <NavLink :name="item.text" :url="item.url" />
-            </div>
+            </li>
           </ul>
         </div>
 
         <div class="pl-4 py-6">
           <p class="text-lg text-semibold text-gray-800 mb-6">Mapa del sitio</p>
           <ul class="space-y-4">
-            <div v-for="(item, index) of sections" :key="index" class="flex space-x-4 items-center">
+            <li v-for="(item, index) of sections" :key="index" class="flex space-x-4 items-center">
               <circle-small-icon />
               <NavLink :name="item.text" :url="item.url" />
-            </div>
+            </li>
           </ul>
         </div>
       </div>

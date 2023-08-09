@@ -10,7 +10,13 @@
         </p>
 
         <div class="lg:flex lg:justify-center max-w-lg my-8">
-          <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/rocket.svg" />
+          <nuxt-img
+            alt="Soluciones potentes"
+            placeholder
+            loading="lazy"
+            sizes="sm:100vw lg:512px"
+            src="/img/rocket.svg"
+          />
         </div>
       </div>
 

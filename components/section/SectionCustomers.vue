@@ -25,7 +25,13 @@
         :href="item.url"
         class="cursor-default brand px-4 h-[100px] flex items-center justify-center bg-gray-100 rounded-md"
       >
-        <nuxt-img placeholder loading="lazy" width="300px" :src="'/img/customers/' + item.name + '.webp'" />
+        <nuxt-img
+          placeholder
+          loading="lazy"
+          width="300px"
+          :src="'/img/customers/' + item.name + '.webp'"
+          :alt="item.name"
+        />
       </a>
     </div>
 
@@ -34,7 +40,7 @@
     </div>
 
     <div class="mt-24 max-w-xl mx-auto">
-      <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:576px" src="/img/customers.svg" />
+      <nuxt-img alt="Clientes" placeholder loading="lazy" sizes="sm:100vw lg:576px" src="/img/customers.svg" />
     </div>
   </BaseSection>
 </template>

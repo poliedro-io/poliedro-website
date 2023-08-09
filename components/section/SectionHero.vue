@@ -1,12 +1,15 @@
 <template>
   <BaseSection noPaddingY class="min-h-[70vh] mt-[64px] mb-20 flex items-center" id="hero">
     <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
-      <nuxt-img placeholder loading="lazy"
+      <nuxt-img
+        placeholder
+        loading="lazy"
         sizes="sm:100vw lg:576px"
         class="py-8 lg:my-0 lg:order-last"
         data-aos="fade-up"
         data-aos-once="true"
         src="/img/hero.svg"
+        alt="Soluciones digitales"
       />
       <div>
         <span
