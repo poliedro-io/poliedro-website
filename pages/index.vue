@@ -12,26 +12,26 @@
 
     <SectionBrochure />
 
-    <SectionCustomers />
+    <SectionCustomers :items="customers" />
 
     <SectionContact />
   </div>
 </template>
 
 <script>
-import SectionBrochure from '../components/section/SectionBrochure.vue'
 export default {
-    name: "IndexPage",
-    async asyncData({ $content, params }) {
-        const solutions = await $content("solutions", params.slug).sortBy("id", "asc").fetch();
-        const features = await $content("features", params.slug).sortBy("id", "asc").fetch();
-        const digitalization = await $content("digitalization", params.slug).sortBy("id", "asc").fetch();
-        return {
-            solutions,
-            features,
-            digitalization,
-        };
-    },
-    components: { SectionBrochure }
+  name: 'IndexPage',
+  async asyncData({ $content, params }) {
+    const solutions = await $content('solutions', params.slug).sortBy('id', 'asc').fetch()
+    const features = await $content('features', params.slug).sortBy('id', 'asc').fetch()
+    const digitalization = await $content('digitalization', params.slug).sortBy('id', 'asc').fetch()
+    const customers = await $content('customers', params.slug).sortBy('id', 'asc').fetch()
+    return {
+      solutions,
+      features,
+      digitalization,
+      customers,
+    }
+  },
 }
 </script>

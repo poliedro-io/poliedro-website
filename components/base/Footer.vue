@@ -2,7 +2,7 @@
   <footer class="max-w-screen-xl mx-auto">
     <div class="w-full">
       <div class="w-full md:py-20 divide-y lg:divide-y-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:divide-x">
-        <div class="flex justify-center items-center md:items-start min-h-[300px]" v-smooth-scroll href="#hero">
+        <div v-smooth-scroll class="flex justify-center items-center md:items-start min-h-[300px]" href="#hero">
           <nuxt-img
             placeholder
             loading="lazy"

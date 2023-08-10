@@ -19,18 +19,18 @@
 
     <div data-aos="fade-up" class="my-8 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
       <a
-        v-for="(item, index) of customers"
+        v-for="(item, index) of items"
         :key="index"
         target="_blank"
         :href="item.url"
-        class="cursor-default brand px-4 h-[100px] flex items-center justify-center bg-gray-100 rounded-md"
+        class="cursor-pointer brand px-4 h-[100px] flex items-center justify-center bg-gray-100 rounded-md"
       >
         <nuxt-img
           placeholder
           loading="lazy"
-          height="80"
-          width="auto"
-          :src="'/img/customers/' + item.name + '.webp'"
+          :width="item.width"
+          :height="item.height"
+          :src="'/img/customers/' + item.img"
           :alt="item.name"
         />
       </a>
@@ -55,44 +55,14 @@
 </template>
 
 <script>
+import aosMixin from '@/mixins/aos'
 export default {
-  data() {
-    return {
-      customers: [
-        {
-          name: 'fama',
-          url: 'http://www.ventasfama.cl/reparto.php',
-        },
-        {
-          name: 'steelnorte',
-          url: 'https://steelnorte.cl/',
-        },
-        {
-          name: 'bertolino',
-          url: 'https://www.bertolino.cl/',
-        },
-        {
-          name: 'canin',
-          url: 'https://www.canin.cl/',
-        },
-        {
-          name: 'fishcare',
-          url: 'https://transportesfishcare.cl/',
-        },
-        {
-          name: 'impulsa',
-          url: 'https://www.impulsaingenieria.com/',
-        },
-        {
-          name: 'polytex',
-          url: 'https://www.polytex.cl/',
-        },
-        {
-          name: 'roccflex',
-          url: 'https://www.roccflex.cl/',
-        },
-      ],
-    }
+  mixins: [aosMixin],
+  props: {
+    items: {
+      type: Array,
+      default: () => [],
+    },
   },
 }
 </script>

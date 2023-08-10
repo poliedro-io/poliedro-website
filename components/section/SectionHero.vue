@@ -3,7 +3,6 @@
     <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
       <nuxt-img
         placeholder
-        loading="lazy"
         sizes="sm:100vw lg:576px"
         class="py-8 lg:my-0 lg:order-last"
         data-aos="fade-up"

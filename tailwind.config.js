@@ -1,31 +1,17 @@
-const colors = require('tailwindcss/colors');
+const colors = require('tailwindcss/colors')
 
 module.exports = {
-  // tailwindcss: {
-  //   exposeConfig: true
-  // },
   mode: 'jit',
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
-  safelist: [
-    'bg-gray',
-    'bg-blue',
-    'bg-yellow',
-    'text-blue',
-    'text-yellow',
-    'shadow-blue-500/50',
-    'filter',
-    'invert'
-  ],
+  safelist: ['bg-gray', 'bg-blue', 'bg-yellow', 'text-blue', 'text-yellow', 'shadow-blue-500/50', 'filter', 'invert'],
   theme: {
-
     fontFamily: {
-    
       sans: ['Poppins', 'sans-serif'],
     },
     colors: {
@@ -33,7 +19,7 @@ module.exports = {
       current: 'currentColor',
       white: colors.white,
       gray: colors.gray,
-      'blue': {
+      blue: {
         50: '#e3eef6',
         100: '#b8d6e8',
         200: '#89bad9',
@@ -48,7 +34,7 @@ module.exports = {
         DEFAULT: '#1275b3',
         dark: '#05458b',
       },
-      'yellow': {
+      yellow: {
         50: '#fff9e1',
         100: '#ffefb3',
         200: '#ffe480',
@@ -61,11 +47,9 @@ module.exports = {
         900: '#ffa900',
         light: '#fff9e1',
         DEFAULT: '#ffc901',
-        dark: 'ffa900'
+        dark: 'ffa900',
       },
     },
-
   },
-  plugins: [require('@tailwindcss/forms'),
-  require('@tailwindcss/aspect-ratio')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 }

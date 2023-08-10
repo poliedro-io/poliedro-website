@@ -1,5 +1,5 @@
 <template>
-  <BaseSection no-padding-x id="solutions" class="dark-bg" separatorTop separatorBottom>
+  <BaseSection id="solutions" no-padding-x class="dark-bg" separatorTop separatorBottom>
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <BaseHeader
@@ -36,8 +36,8 @@
               :alt="item.title"
               placeholder
               loading="lazy"
-              width="300"
-              height="auto"
+              :width="item.width"
+              :height="item.height"
               class="relative shrink-0 w-auto group-hover:opacity-70"
               :src="'/img/solutions/' + item.image"
             />
